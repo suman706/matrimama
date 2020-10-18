@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--================= title ==========================-->
 		<title>Matrimama | Home</title>
 		<!--================= css ============================-->
@@ -11,10 +12,11 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- =============== font-awesome ====================-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<style>
+		<style>
 
-	</style>
+		</style>
+	</head>
+
 	<body>
 		<!--===================popup form ==================================-->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -57,64 +59,60 @@
 					<div class="top_model_box"></div>
 					<div class="modal-body p-4">
 						<div class="model_content_form">
-							<div class="choose">
-							<div class="main slider_form">
-								<div>
-									<label for="gender">I am looking for a</label><br>
-									<select class="px-3 py-1 form-control">
-										<option>Male</option>
-										<option>Female</option>
-									</select>
-								</div>
-								<div>
-									<label for="age">aged from</label><br>
-									<select class="px-3 py-1 form-control">
-										<option>20</option>
-										<option>18</option>
-										<option>23</option>
-										<option>22</option>
-										<option>24</option>
-									</select>
-								</div>
-								<div>
-									<label for="age">aged to</label><br>
-									<select class="px-3 py-1 form-control">
-										<option>25</option>
-										<option>18</option>
-										<option>20</option>
-										<option>22</option>
-										<option>24</option>
-									</select>
-								</div>
-								<div>
-									<label for="religion">of Religion</label><br>
-									<select class="px-3 py-1 form-control">
-										<option>Select</option>
-										<option>Hindu</option>
-										<option>Muslim</option>
-										<option>Christian</option>
-										<option>Sikh</option>
-										<option>Parsi</option>
-										<option>Jain</option>
-									</select>
-								</div>
-								<div>
-									<label for="lang">of Mother Tongue</label><br>
-									<select class="px-3 py-1 form-control">
-										<option>Select</option>
-										<option>Bengali</option>
-										<option>English</option>
-										<option>Gujarati</option>
-										<option>Hindi</option>
-										<option>Kannada</option>
-										<option>Konkani</option>
-									</select>
-								</div>
-								<div>
-									<button class="bttn search">Let's Begin</button>
-								</div>
+							<div class="form-group">
+								<label for="gender">I am looking for a</label><br>
+								<select class="px-3 py-1 form-control">
+									<option>Male</option>
+									<option>Female</option>
+								</select>
 							</div>
-						</div>
+							<div class="form-group">
+								<label for="age">aged from</label><br>
+								<select class="px-3 py-1 form-control">
+									<option>20</option>
+									<option>18</option>
+									<option>23</option>
+									<option>22</option>
+									<option>24</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="age">aged to</label><br>
+								<select class="px-3 py-1 form-control">
+									<option>25</option>
+									<option>18</option>
+									<option>20</option>
+									<option>22</option>
+									<option>24</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="religion">of Religion</label><br>
+								<select class="px-3 py-1 form-control">
+									<option>Select</option>
+									<option>Hindu</option>
+									<option>Muslim</option>
+									<option>Christian</option>
+									<option>Sikh</option>
+									<option>Parsi</option>
+									<option>Jain</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="lang">of Mother Tongue</label><br>
+								<select class="px-3 py-1 form-control">
+									<option>Select</option>
+									<option>Bengali</option>
+									<option>English</option>
+									<option>Gujarati</option>
+									<option>Hindi</option>
+									<option>Kannada</option>
+									<option>Konkani</option>
+								</select>
+							</div>
+							<div>
+								<button class="bttn search">Let's Begin</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -127,10 +125,11 @@
 				<!---================== Top_Bar================-->
 				<div class="row">
 					<div class="top_bar">
+						<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
 						<button class="bttn phone_search" data-toggle="modal" data-target="#search">Let's Begin</button>
 						<button class="bttn" data-toggle="modal" data-target="#exampleModal">Login</button>
-						<button class="bttn">Help</button>
-						<div class="dropdown">
+						<button class="bttn help_btn">Help</button>
+						<div class="dropdown langu">
 							<p class="dropdown-toggle lang" data-toggle="dropdown">English
 								<span class="caret"></span></p>
 								<ul class="dropdown-menu p-2 lang1">
@@ -139,6 +138,7 @@
 								</ul>
 							</div>
 							<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
+							
 						</div>
 					</div>
 					<!----------------- End top bar ------------------->

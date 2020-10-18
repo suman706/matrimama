@@ -25,14 +25,6 @@
 	box-sizing: border-box;
 }
 /*=============== popup form ============*/
-.closee{
-	width: 20px;
-	height: 20px;
-	border:none;
-	color: red;
-	font-size: 25px;
-	background-color: transparent;
-}
 .top_model_box{
 	width: 100%;
 	height: 20px;
@@ -64,14 +56,31 @@
 	font-size: 14px;
 	padding-right: 1rem;
 }
-@media only screen and (max-width: 600px){
-	.top_bar .help{
+.top_bar_logo{
+		height: 50px;
+		margin-left: 90px;
 		display: none;
+	}
+@media only screen and (max-width: 600px){
+	.top_bar .help, .help_btn, .langu{
+		display: none;
+	}
+	.top_bar_logo{
+		display: block;
+	}
+	.top_bar{
+		padding-right: 75px;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
     .top_bar .help{
 		display: none;
+	}
+	.top_bar_logo{
+		display: block;
+	}
+	.top_bar{
+		padding-right: 75px;
 	}
 }
 .top_bar .dropdown-menu ul{
@@ -468,6 +477,18 @@ section img {
 .journey_details{
 	width: 80%;
 	margin: auto;
+}
+@media only screen and (max-width: 600px) {
+	.journey_details h2{
+		font-size: 23px;
+		font-weight: bold;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+	.journey_details h2{
+		font-size: 24px;
+		font-weight: bold;
+	}
 }
 
 /*=====================about==================*/
