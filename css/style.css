@@ -638,7 +638,7 @@ footer ul li a:hover{
 }
 .footer_btn{
 	background-color: var(--button);
-	width: 80%;
+	width: 200px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 10px;
