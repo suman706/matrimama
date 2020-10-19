@@ -8,6 +8,8 @@
 		<title>Matrimama | Home</title>
 		<!--================= css ============================-->
 		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="build/css/intlTelInput.css">
 		<!--=====================bootstrap====================-->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- =============== font-awesome ====================-->
@@ -127,8 +129,9 @@
 					<div class="top_bar">
 						<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
 						<button class="bttn phone_search" data-toggle="modal" data-target="#search">Let's Begin</button>
-						<button class="bttn" data-toggle="modal" data-target="#exampleModal">Login</button>
 						<button class="bttn help_btn">Help</button>
+						<button class="bttn" data-toggle="modal" data-target="#exampleModal">Login</button>
+						
 						<div class="dropdown langu">
 							<p class="dropdown-toggle lang" data-toggle="dropdown">English
 								<span class="caret"></span></p>
@@ -463,6 +466,13 @@
 			</div>
 		</footer>
 		<!-- java script---->
+		<script src="build/js/intlTelInput.js"></script>
+		  <script>
+		    var input = document.querySelector("#phone");
+		    window.intlTelInput(input, {
+		      utilsScript: "build/js/utils.js",
+		    });
+		  </script>
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/popper.js"></script>
 		<script src="js/bootstrap.min.js"></script>

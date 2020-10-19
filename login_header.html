@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--=====================bootstrap====================-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- =============== font-awesome ====================-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.user_icon_s{
+				display: none;
+				width: 50px;
+				height: 50px;
+				float: right;
+				margin-top: 10px;
+				margin-bottom: 20px;
+				margin-right: -50px;
+			}
+			@media only screen and (max-width: 600px){
+			.user_icon_s{
+				display: block;
+			}
+			.bttn{
+				float: left;
+				margin-left: 50px;
+				margin-top: 25px;
+			}
+		}
+		@media only screen and (min-width: 600px) and (max-width: 991px) {
+			.bttn{
+				float: left;
+				margin-left: 50px;
+				margin-top: 25px;
+			}
+			.user_icon_s{
+				display: block;
+			}
+		}
+		</style>
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<!---================== Top_Bar================-->
+			<div class="row">
+				<div class="top_bar">
+					<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
+					
+					<button class="bttn help_btn">Help</button>
+					
+					<button class="bttn" data-toggle="modal" data-target="#exampleModal">Logout</button>
+
+					<div class="dropdown langu">
+					<p class="dropdown-toggle lang" data-toggle="dropdown">English
+						<span class="caret"></span></p>
+						<ul class="dropdown-menu p-2 lang1">
+							<li><a href="#">Hindi</a></li>
+							<li><a href="#">Bangoli</a></li>
+						</ul>
+				</div>
+					<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
+					<a href="#"><img src="./image/svg/user.svg" alt="user" class="user_icon_s"></a>
+					</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- java script---->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="js/script.js"></script>
+</body>
+</html>

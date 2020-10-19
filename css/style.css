@@ -61,6 +61,7 @@
 		height: 50px;
 		margin-left: 90px;
 		display: none;
+		margin-top: 10px;
 	}
 @media only screen and (max-width: 600px){
 	.top_bar .help, .help_btn, .langu{
@@ -187,7 +188,7 @@ input[type=radio]{
 }
 .register_with{
 	text-align: center;
-	margin-left: -100px;
+	margin-left: 0px;
 	/*padding: 10px;*/
 }
 
