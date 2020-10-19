@@ -288,6 +288,9 @@ input[type=radio]{
 	color: white;
 	font-size: 20px;
 }
+.details_menu{
+	padding-left: 50px;
+}
 .d_icon{
 	height: 40px;
     width: 40px;
@@ -301,16 +304,10 @@ input[type=radio]{
 	.support{
 		display: none;
 	}
-	.details{
-		text-align: center;
-	}
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
 	.support{
 		display: none;
-	}
-	.details{
-		text-align: center;
 	}
 }
 /*=================gallery=======================*/
