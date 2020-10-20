@@ -23,12 +23,23 @@
 					margin-right: -50px;
 					margin-top: 5px;
 				}
+				.drop_down{
+					background-color: #40968B;
+					width: 50%;
+				}
 			}
 			@media only screen and (min-width: 600px) and (max-width: 991px) {
 				.collapse_icon{
 					margin-right: -50px;
 					margin-top: 5px;
 				}
+				.drop_down{
+					background-color: #40968B;
+					width: 50%;
+				}
+			}
+			.drop_down{
+				background-color: #40968B;
 			}
 		</style>
 	<body>
@@ -135,15 +146,22 @@
 
 		<!--==========================end popup form====================================-->
 		<header>
-			<!---================== Top_Bar================-->
 			<div class="container-fluid">
+				<!---================== Top_Bar================-->
 				<div class="row">
 					<div class="top_bar">
 						<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
-						<img src="./image/svg/menu.svg" alt="" class="collapse_icon float-right">
+						<i class="fa fa-bars text-white float-right mt-3" style="font-size:26px" type="button" data-toggle="dropdown"></i>
+                            <ul class="col-md-2 col-sm-2 dropdown-menu px-4 mt-3 drop_down">
+                                <li><a class="text-white" href="#">Home</a></li>
+                                <li><a class="text-white" href="#">About</a></li>
+                                <li><a class="text-white" href="#">Free Horoscope</a></li>
+                                <li><a class="text-white" href="#">Privacy Policy</a></li>
+                                <li><a class="text-white" href="#">Contact Us</a></li>
+                            </ul>
 						<button class="bttn phone_search" data-toggle="modal" data-target="#search">Let's Begin</button>
 						<button class="bttn help_btn">Help</button>
-						<button class="bttn" data-toggle="modal" data-target="#exampleModal">Login</button>
+						<button class="bttn login_btn" data-toggle="modal" data-target="#exampleModal">Login</button>
 						
 						<div class="dropdown langu">
 							<p class="dropdown-toggle lang" data-toggle="dropdown">English
@@ -210,7 +228,7 @@
 										<input type="password" id="password" name="password" required>
 									</div>
 									<div>
-										<button class="register_btn">REGISTER FREE</button>
+										<button class="register_btn"><strong>REGISTER FREE</strong></button>
 									</div>
 								</div>
 							</form>

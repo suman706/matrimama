@@ -59,9 +59,11 @@
 }
 .top_bar_logo{
 	height: 50px;
-	margin-left: 90px;
+	margin-left: 20px;
 	display: none;
 	margin-top: 10px;
+	padding-bottom: 10px;
+	float: left;
 }
 .collapse_icon{
 	height: 40px;
@@ -74,11 +76,18 @@
 	.top_bar .help, .help_btn, .langu{
 		display: none;
 	}
+	.top_bar{
+		width: 100%;
+		background-color: var(--litepink);
+	}
 	.top_bar_logo{
 		display: block;
 	}
-	.top_bar{
-		padding-right: 75px;
+	.login_btn{
+		display: none;
+	}
+	.top_bar .fa{
+		color: black;
 	}
 	.collapse_icon{
 		margin-right: -50px;
@@ -89,11 +98,18 @@
     .top_bar .help{
 		display: none;
 	}
+	.top_bar{
+		width: 100%;
+		background-color: var(--litepink);
+	}
+	.top_bar .fa{
+		color: black;
+	}
 	.top_bar_logo{
 		display: block;
 	}
-	.top_bar{
-		padding-right: 75px;
+	.login_btn{
+		display: none;
 	}
 	.collapse_icon{
 		margin-right: -50px;
@@ -258,7 +274,7 @@ input[type=radio]{
 		width: 65%;
 	}
 	.phone_search{
-		display: block;
+		display: none;
 	}
 	.slider_phone{
 		display: block;
@@ -278,7 +294,7 @@ input[type=radio]{
 		width: 65%;
 	}
 	.phone_search{
-		display: block;
+		display: none;
 	}
 	.slider_phone{
 		display: block;
