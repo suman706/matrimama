@@ -16,11 +16,21 @@
 				width: 50px;
 				height: 50px;
 				float: right;
-				margin-top: 10px;
+				margin-top: 15px;
 				margin-bottom: 20px;
-				margin-right: -50px;
 			}
-			@media only screen and (max-width: 600px){
+			.login_menu_bar{
+				height: auto;
+				background-color: #3E293A;
+			}
+			.number{
+				color: white;
+				padding-left: 10px;
+			}
+			.login_logo_bar{
+				
+			}
+		@media only screen and (max-width: 600px){
 			.user_icon_s{
 				display: block;
 			}
@@ -28,6 +38,12 @@
 				float: left;
 				margin-left: 50px;
 				margin-top: 25px;
+			}
+			.login_logo_bar{
+				display: none;
+			}
+			.logout{
+				display: none;
 			}
 		}
 		@media only screen and (min-width: 600px) and (max-width: 991px) {
@@ -36,8 +52,14 @@
 				margin-left: 50px;
 				margin-top: 25px;
 			}
+			.logout{
+				display: none;
+			}
 			.user_icon_s{
 				display: block;
+			}
+			.login_logo_bar{
+				display: none;
 			}
 		}
 		</style>
@@ -49,10 +71,10 @@
 			<div class="row">
 				<div class="top_bar">
 					<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
-					
+					<img src="./image/svg/menu.svg" alt="" class="collapse_icon float-right">
 					<button class="bttn help_btn">Help</button>
 					
-					<button class="bttn" data-toggle="modal" data-target="#exampleModal">Logout</button>
+					<button class="bttn logout">Logout</button>
 
 					<div class="dropdown langu">
 					<p class="dropdown-toggle lang" data-toggle="dropdown">English
@@ -64,7 +86,24 @@
 				</div>
 					<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
 					<a href="#"><img src="./image/svg/user.svg" alt="user" class="user_icon_s"></a>
+
 					</div>
+			</div>
+
+			<!----------------- End top bar ------------------->
+					
+			<div class="row login_menu_bar">
+				<div class="col-lg-4">
+					<div class="logo">
+						<img src="./image/logo.png" alt="logo" class="login_logo_bar">
+					</div>
+				</div>
+				<div class="col-lg-8 float-right">
+					<a href="#">Your Shortlisted</a><span class="number">(0)</span>
+					<a href="#">You Interested</a><span class="number">(0)</span>
+					<a href="#">New Matches</a><span class="number">(0)</span>
+					<a href="#">Recently Viewed</a><span class="number">(0)</span>
+				</div>
 			</div>
 		</div>
 	</header>

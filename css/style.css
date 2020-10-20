@@ -49,7 +49,7 @@
 	height: auto;
 	background-color: var(--brown);
 	color: white;
-	padding-right: 100px;
+	padding-right: 20px;
 }
 .top_bar p{
 	float: right;
@@ -58,11 +58,18 @@
 	padding-right: 1rem;
 }
 .top_bar_logo{
-		height: 50px;
-		margin-left: 90px;
-		display: none;
-		margin-top: 10px;
-	}
+	height: 50px;
+	margin-left: 90px;
+	display: none;
+	margin-top: 10px;
+}
+.collapse_icon{
+	height: 40px;
+	width: 40px;
+	margin-top: 8px;
+	padding-left: 10px;
+	margin-right: 65px;
+}
 @media only screen and (max-width: 600px){
 	.top_bar .help, .help_btn, .langu{
 		display: none;
@@ -72,6 +79,10 @@
 	}
 	.top_bar{
 		padding-right: 75px;
+	}
+	.collapse_icon{
+		margin-right: -50px;
+		margin-top: 20px;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
@@ -83,6 +94,10 @@
 	}
 	.top_bar{
 		padding-right: 75px;
+	}
+	.collapse_icon{
+		margin-right: -50px;
+		margin-top: 20px;
 	}
 }
 .top_bar .dropdown-menu ul{
@@ -129,6 +144,10 @@ input[type=radio]{
 .logo img{
 	width: 80%;
 	height: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+	padding-top: 20px;
 }
 .register_btn{
 	height: auto;
@@ -136,12 +155,12 @@ input[type=radio]{
 	background-color: var(--litegreen);
 	color: white;
 	border:transparent;
-	padding: 10px;
+	padding: 5px;
 	font-weight: bold;
 	font-size: 12px;
 	margin-left: 10px;
 	cursor: pointer;
-	margin-top: 15px;
+	margin-top: 26px;
 }
 .register_btn:hover{
 	background:transparent;
@@ -189,7 +208,7 @@ input[type=radio]{
 .register_with{
 	text-align: center;
 	margin-left: 0px;
-	/*padding: 10px;*/
+	margin-top: 25px;
 }
 
 /*===================slider=====================*/
@@ -288,7 +307,7 @@ input[type=radio]{
 	width: 100%;
 	height: auto;
 	color: white;
-	font-size: 20px;
+	font-size: 1rem;
 }
 .details_menu{
 	padding-left: 85px;
@@ -321,6 +340,7 @@ section {
      -moz-column-gap: 20px;
           column-gap: 20px;
   padding: 20px;
+  margin-bottom: -15%;
 }
 
 section img {
@@ -483,15 +503,21 @@ section img {
 	width: 80%;
 	margin: auto;
 }
+.journey h3{
+	font-size: 22px;
+}
+.journey p{
+	font-size: 15px;
+}
 @media only screen and (max-width: 600px) {
 	.journey_details h2{
-		font-size: 23px;
+		font-size: 20px;
 		font-weight: bold;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
 	.journey_details h2{
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: bold;
 	}
 }
@@ -650,13 +676,19 @@ div .icon2{
 	height: auto;
 	color: white;
 	padding: 2rem;
-	font-size: 16px;
+}
+.footer h5{
+	font-size: 1.1rem;
+}
+.footer p{
+	font-size: 0.9rem;
 }
 footer ul li{
 	list-style-type: none;
 }
 footer ul li a{
 	color: white;
+	font-size: 0.9rem;
 }
 footer ul li a:hover{
 	color: var(--orange);
@@ -685,4 +717,20 @@ footer ul li a:hover{
 	background:transparent;
 	color: white;
 	border: 1px solid orange;
+}
+.footer_social_media{
+	height: 30px;
+	width: 30px;
+	padding:3px;
+	cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+	.company{
+		display: none;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 991px){
+	.company{
+		display: none;
+	}
 }
