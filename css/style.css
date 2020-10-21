@@ -769,3 +769,31 @@ footer ul li a:hover{
 		display: none;
 	}
 }
+
+
+/*======================================================================
+========================================================================
+======================================================================*/
+@media only screen and (max-width: 600px){
+	.collapse_icon{
+		margin-right: -50px;
+		margin-top: 5px;
+	}
+	.drop_down{
+		background-color: #40968B;
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+	.collapse_icon{
+		margin-right: -50px;
+		margin-top: 5px;
+	}
+	.drop_down{
+		background-color: #40968B;
+		width: 50%;
+	}
+}
+.drop_down{
+	background-color: #40968B;
+}
