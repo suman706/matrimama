@@ -65,15 +65,20 @@
 	padding-bottom: 10px;
 	float: left;
 }
-.collapse_icon{
-	height: 40px;
-	width: 40px;
-	margin-top: 8px;
-	padding-left: 10px;
-	margin-right: 65px;
+#dropnav p{
+font-size: 12px;
+}
+#dropnav{
+	background-color: #40968B;
+	color: white;
+	font-size: 14px;
+	text-align: justify;
+}
+#faicon{
+	color: white;
 }
 @media only screen and (max-width: 600px){
-	.top_bar .help, .help_btn, .langu{
+	.top_bar .help, .help_btn, .langu,.login_btn{
 		display: none;
 	}
 	.top_bar{
@@ -83,37 +88,31 @@
 	.top_bar_logo{
 		display: block;
 	}
-	.login_btn{
-		display: none;
-	}
-	.top_bar .fa{
+	#faicon{
 		color: black;
 	}
-	.collapse_icon{
-		margin-right: -50px;
-		margin-top: 20px;
+	#dropnav{
+		background-color: #40968B;
+		width: 60%;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
-    .top_bar .help{
+    .top_bar .help, .help_btn, .langu,.login_btn{
 		display: none;
 	}
 	.top_bar{
 		width: 100%;
 		background-color: var(--litepink);
 	}
-	.top_bar .fa{
+	#faicon{
 		color: black;
 	}
 	.top_bar_logo{
 		display: block;
 	}
-	.login_btn{
-		display: none;
-	}
-	.collapse_icon{
-		margin-right: -50px;
-		margin-top: 20px;
+	#dropnav{
+		background-color: #40968B;
+		width: 60%;
 	}
 }
 .top_bar .dropdown-menu ul{
@@ -777,6 +776,43 @@ footer ul li a:hover{
 }
 
 
-/*======================================================================
-========================================================================
-======================================================================*/
+/*================= about us  & Privacy_policy page=====================*/
+/*---------------------left side of privacy------------*/
+.privacy_left_image{
+	width: 100%;
+	height: 400px;
+}
+/*------------------------right side of privacy ----------------------*/
+.heading_card{
+	color: #F2784D;
+}
+.paragraph_card{
+	font-size: 0.9rem;
+}
+.card{
+	width: 18rem;
+}
+@media only screen and (max-width: 600px){
+	.privacy_left_image{
+		width: 100%;
+		height: 300px;
+	}
+	.left_paragraph p{
+		text-align: justify;
+	}
+	.card{
+		width: 22rem;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+	.privacy_left_image{
+		width: 100%;
+		height: 300px;
+	}
+	.left_paragraph p{
+		text-align: justify;
+	}
+	.card{
+		width: 22rem;
+	}
+}
