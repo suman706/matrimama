@@ -274,7 +274,7 @@ input[type=radio]{
 		width: 65%;
 	}
 	.phone_search{
-		display: none;
+		display: block;
 	}
 	.slider_phone{
 		display: block;
@@ -294,7 +294,7 @@ input[type=radio]{
 		width: 65%;
 	}
 	.phone_search{
-		display: none;
+		display: block;
 	}
 	.slider_phone{
 		display: block;
@@ -556,27 +556,45 @@ section img {
 	margin-top: 30px;
 	padding-right: 20px;
 }
+.about_phone{
+	display: none;
+}
 @media only screen and (max-width: 600px) {
 	.couple_hand img{
 		margin-left: 0px;
-		margin-top: 30px;
+		margin-top: 0px;
 		padding-right: 0px;
 	}
 	.about{
 		text-align: center;
+	}
+	.about_phone{
+		display: block;
+	}
+	.heading_about{
+		display: none;
 	}
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
 	.couple_hand img{
 		margin-left: 0px;
-		margin-top: 30px;
+		margin-top: 0px;
 		padding-right: 0px;
 	}
 	.about{
 		text-align: center;
 	}
+	.about_phone{
+		display: block;
+	}
+	.heading_about{
+		display: none;
+	}
 }
-.about h2{
+.about_phone{
+	padding-bottom: 10px;
+}
+.about .heading_about{
 	font-weight: 400px;
 	font-size: 30px;
 	padding-top: 10px;
