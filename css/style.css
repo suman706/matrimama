@@ -263,7 +263,7 @@ a.slide_btn {
     padding: 0.7rem;
     float: right;
     color: #fff;
-    font-weight: 500;
+   /* font-weight: 400;*/
 }
 @media only screen and (max-width: 600px) {
 	.slider .choose{
