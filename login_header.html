@@ -11,57 +11,7 @@
 		<!-- =============== font-awesome ====================-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
-			.user_icon_s{
-				display: none;
-				width: 50px;
-				height: 50px;
-				float: right;
-				margin-top: 15px;
-				margin-bottom: 20px;
-			}
-			.login_menu_bar{
-				height: auto;
-				background-color: #3E293A;
-			}
-			.number{
-				color: white;
-				padding-left: 10px;
-			}
-			.login_logo_bar{
-				
-			}
-		@media only screen and (max-width: 600px){
-			.user_icon_s{
-				display: block;
-			}
-			.bttn{
-				float: left;
-				margin-left: 50px;
-				margin-top: 25px;
-			}
-			.login_logo_bar{
-				display: none;
-			}
-			.logout{
-				display: none;
-			}
-		}
-		@media only screen and (min-width: 600px) and (max-width: 991px) {
-			.bttn{
-				float: left;
-				margin-left: 50px;
-				margin-top: 25px;
-			}
-			.logout{
-				display: none;
-			}
-			.user_icon_s{
-				display: block;
-			}
-			.login_logo_bar{
-				display: none;
-			}
-		}
+
 		</style>
 </head>
 <body>
@@ -71,11 +21,21 @@
 			<div class="row">
 				<div class="top_bar">
 					<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
-					<a href="#"><img src="./image/svg/menu.svg" alt="" class="collapse_icon float-right"></a>
+					<i class="fa fa-bars float-right mt-3" style="font-size:26px" type="button" data-toggle="dropdown" id="faicon"></i>
+	                    <ul class="col-lg-2 col-sm-2 dropdown-menu px-4 mt-3 " id="dropnav">
+	                        <li><a class="text-white" href="index.html">Home</a></li>
+	                        <li><a class="text-white" href="about_us.html">About</a></li>
+	                        <li><a class="text-white" href="https://www.astromitra.com/online_horoscope/free-horoscope-compatibility.php" target="_blank">Free Horoscope</a></li>
+	                        <li><a class="text-white" href="privacy_policy.html">Privacy Policy</a></li>
+	                        <li><a class="text-white" href="contact_us.html">Contact Us</a></li>
+	                        <p>Need any Help? Write to us at <span style="color: black;"><b>support@wedding.com</b></span> or Call us at +91-124-2659 OR ELSE Give us your mailid/ phone number we will get in touch with in 18 hrs</p>
+	                        <input type="text" placeholder="Full Name" class="form-control mb-2">
+	                        <input type="email" placeholder="Email" class="form-control mb-2">
+	                        <input type="number" name="number" id="" placeholder="Contact No" class="form-control">
+	                        <button class="bttn float-left">Submit</button>
+						</ul>
 					<button class="bttn help_btn">Help</button>
-					
 					<button class="bttn logout">Logout</button>
-
 					<div class="dropdown langu">
 					<p class="dropdown-toggle lang" data-toggle="dropdown">English
 						<span class="caret"></span></p>
@@ -85,7 +45,7 @@
 						</ul>
 				</div>
 					<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
-					<a href="#"><img src="./image/svg/user.svg" alt="user" class="user_icon_s"></a>
+					<img src="./image/svg/user.svg" alt="user" class="user_icon_s">
 
 					</div>
 			</div>
@@ -98,12 +58,29 @@
 						<img src="./image/logo.png" alt="logo" class="login_logo_bar">
 					</div>
 				</div>
-				<div class="col-lg-8 float-right">
-					<a href="#">Your Shortlisted</a><span class="number">(0)</span>
-					<a href="#">You Interested</a><span class="number">(0)</span>
-					<a href="#">New Matches</a><span class="number">(0)</span>
-					<a href="#">Recently Viewed</a><span class="number">(0)</span>
-				</div>
+				<div class="col-lg-8 shortlisted_section">
+					<a href="#" class="shortlist_ancor">Your Shortlisted<span class="number">(0)</span></a>
+					<a href="#" class="shortlist_ancor">You Interested<span class="number">(0)</span></a>
+					<a href="#" class="shortlist_ancor">New Matches<span class="number">(0)</span></a>
+					<a href="#" class="shortlist_ancor">Recently Viewed<span class="number">(0)</span></a>
+					<i class="fa fa-envelope menu_icon"></i>
+					<i class="fa fa-bell menu_icon"></i>
+					<img src="./image/svg/user.svg" alt="user" class="user_icon_fullscreen" type="button" data-toggle="dropdown" id="faicon">
+						<ul class="col-lg-3 col-sm-2 dropdown-menu px-4 mt-3" id="dropnav" class="dropnav">
+	                        <li><a class="text-white" href="">My Profile</a></li>
+	                        <li><a class="text-white" href="">Edit/Upload Photo</a></li>
+	                        <li><a class="text-white" href="">Desired Partner Profile</a></li>
+	                        <li><a class="text-white" href="">Hide/ Delete Profile</a></li>
+	                        <li><a class="text-white" href="">Change Password</a></li>
+	                        <button class="bttn float-left">Logout</button>
+	                    </ul><br>
+	                <div class="third_row">
+	                	<img src="./image/match.png" alt="match"class="match">
+		                <label for="search">Search for Profile</label>
+		                <input type="text">
+		                <button class="btn btn-sm" id="edit_bttton">Edit Profile</button>
+		            </div>
+				</div>	
 			</div>
 		</div>
 	</header>
