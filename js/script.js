@@ -4,8 +4,8 @@ $(window).load(function() {
     $(".lightbox").fadeIn(300);
     $(".lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' title='" + $(this).attr("title") + "' />");
     $(".filter").css("background-image", "url(" + $(this).attr("src") + ")");
-    $(".title").append("<h2>" + $(this).attr("alt") + "</h2>");
-    $(".desc").append("<p>" + $(this).attr("title") + "</p>");
+    $(".title").append("" + $(this).attr("alt") + "");
+    $(".desc").append("" + $(this).attr("title") + "");
     $("html").css("overflow", "hidden");
     if ($(this).is(":last-child")) {
       $(".arrowr").css("display", "none");
@@ -38,17 +38,19 @@ $(window).load(function() {
     var head = $(".lightbox img").attr("alt");
     var conte = $(".lightbox img").attr("title");
     var search = $("section").find("img[src$='" + imgSrc + "']");
+    var search1 = $("section").find("img[alt$='" + head + "']");
+    var search2 = $("section").find("img[title$='" + conte + "']");
     var newImage = search.next().attr("src");
-    var heading = search.next().attr("alt");
-    var content = search.next().attr("title");
+    var heading = search1.next().attr("alt");
+    var content = search2.next().attr("title");
 
     /*$(".lightbox img").attr("src", search.next());*/
     $(".lightbox img").attr("src", newImage);
     $(".lightbox img").attr("alt", heading);
     $(".lightbox img").attr("title", content);
     $(".filter").css("background-image", "url(" + newImage + ")");
-    $(".title").append("<h2>" + heading + "</h2>");
-    $(".desc").append("<p>" + content + "</p>");
+    $(".title").text("" + heading + "");
+    $(".desc").text("" + content + "");
 
     if (!search.next().is(":last-child")) {
       $(".arrowl").css("display", "block");
@@ -59,15 +61,19 @@ $(window).load(function() {
 
   $(".arrowl").click(function() {
     var imgSrc = $(".lightbox img").attr("src");
+    var head = $(".lightbox img").attr("alt");
+    var conte = $(".lightbox img").attr("title");
     var search = $("section").find("img[src$='" + imgSrc + "']");
+    var search1 = $("section").find("img[alt$='" + head + "']");
+    var search2 = $("section").find("img[title$='" + conte + "']");
     var newImage = search.prev().attr("src");
     var heading = search.prev().attr("alt");
     var content = search.prev().attr("title");
     /*$(".lightbox img").attr("src", search.next());*/
     $(".lightbox img").attr("src", newImage);
     $(".filter").css("background-image", "url(" + newImage + ")");
-    $(".title").append("<h2>" + heading + "</h2>");
-    $(".desc").append("<p>" + content + "</p>");
+    $(".title").text("" + heading + "");
+    $(".desc").text("" + content + "");
 
     if (!search.prev().is(":first-child")) {
       $(".arrowr").css("display", "block");
