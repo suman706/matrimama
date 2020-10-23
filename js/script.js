@@ -2,9 +2,10 @@ $(window).load(function() {
 
   $("section img").click(function() {
     $(".lightbox").fadeIn(300);
-    $(".lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' />");
+    $(".lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' title='" + $(this).attr("title") + "' />");
     $(".filter").css("background-image", "url(" + $(this).attr("src") + ")");
-    /*$(".title").append("<h1>" + $(this).attr("alt") + "</h1>");*/
+    $(".title").append("<h2>" + $(this).attr("alt") + "</h2>");
+    $(".desc").append("<p>" + $(this).attr("title") + "</p>");
     $("html").css("overflow", "hidden");
     if ($(this).is(":last-child")) {
       $(".arrowr").css("display", "none");
