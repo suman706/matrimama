@@ -254,7 +254,7 @@ background-image: url(../image/sunset.jpg);
 width: 100%;
 height: 50vh;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: 100% 100%;
 background-position: center center;
 display: none;
 }
@@ -262,7 +262,6 @@ a.slide_btn {
 padding: 0.7rem;
 float: right;
 color: #fff;
-/* font-weight: 400;*/
 }
 @media only screen and (max-width: 600px) {
 .slider .choose{
@@ -302,6 +301,7 @@ display: block;
 }
 .slider_phone{
 display: block;
+height: 100vh;
 }
 }
 .search{
@@ -407,7 +407,7 @@ display: block;
 .filter {
 position: absolute;
 width: 100%;
-height: 100%;
+height: 100vh;
 -webkit-filter: blur(20px);
 filter: blur(20px);
 opacity: 0.5;
