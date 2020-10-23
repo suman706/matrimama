@@ -35,11 +35,20 @@ $(window).load(function() {
 
   $(".arrowr").click(function() {
     var imgSrc = $(".lightbox img").attr("src");
+    var head = $(".lightbox img").attr("alt");
+    var conte = $(".lightbox img").attr("title");
     var search = $("section").find("img[src$='" + imgSrc + "']");
     var newImage = search.next().attr("src");
+    var heading = search.next().attr("alt");
+    var content = search.next().attr("title");
+
     /*$(".lightbox img").attr("src", search.next());*/
     $(".lightbox img").attr("src", newImage);
+    $(".lightbox img").attr("alt", heading);
+    $(".lightbox img").attr("title", content);
     $(".filter").css("background-image", "url(" + newImage + ")");
+    $(".title").append("<h2>" + heading + "</h2>");
+    $(".desc").append("<p>" + content + "</p>");
 
     if (!search.next().is(":last-child")) {
       $(".arrowl").css("display", "block");
@@ -52,9 +61,13 @@ $(window).load(function() {
     var imgSrc = $(".lightbox img").attr("src");
     var search = $("section").find("img[src$='" + imgSrc + "']");
     var newImage = search.prev().attr("src");
+    var heading = search.prev().attr("alt");
+    var content = search.prev().attr("title");
     /*$(".lightbox img").attr("src", search.next());*/
     $(".lightbox img").attr("src", newImage);
     $(".filter").css("background-image", "url(" + newImage + ")");
+    $(".title").append("<h2>" + heading + "</h2>");
+    $(".desc").append("<p>" + content + "</p>");
 
     if (!search.prev().is(":first-child")) {
       $(".arrowr").css("display", "block");
