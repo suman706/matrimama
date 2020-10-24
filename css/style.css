@@ -166,26 +166,8 @@ padding-right: 50px;
 padding-bottom: 30px;
 padding-top: 20px;
 }
-.register_btn{
-height: auto;
-width: 130px;
-background-color: var(--litegreen);
-color: white;
-border:transparent;
-padding: 5px;
-font-weight: bold;
-font-size: 12px;
-margin-left: 10px;
-cursor: pointer;
-margin-top: 26px;
-}
-.register_btn:hover{
-background:transparent;
-color: black;
-border:2px solid var(--litegreen);
-}
 .icon{
-font-size: 14px;
+font-size: 12px;
 }
 .main{
 display: flex;
