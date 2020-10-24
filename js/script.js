@@ -4,8 +4,8 @@ $(window).load(function() {
     $(".lightbox").fadeIn(300);
     $(".lightbox").append("<img src='" + $(this).attr("src") + "' alt='" + $(this).attr("alt") + "' title='" + $(this).attr("title") + "' />");
     $(".filter").css("background-image", "url(" + $(this).attr("src") + ")");
-    $(".title").append("" + $(this).attr("alt") + "");
-    $(".desc").append("" + $(this).attr("title") + "");
+    $(".title").text("" + $(this).attr("alt") + "");
+    $(".desc").text("" + $(this).attr("title") + "");
     $("html").css("overflow", "hidden");
     if ($(this).is(":last-child")) {
       $(".arrowr").css("display", "none");
@@ -44,7 +44,7 @@ $(window).load(function() {
     var heading = search.next().attr("alt");
     var content = search.next().attr("title");
 
-    $(".lightbox img").attr("src", search.next());
+    /*$(".lightbox img").attr("src", search.next());*/
     $(".lightbox img").attr("src", newImage);
     $(".lightbox img").attr("alt", heading);
     $(".lightbox img").attr("title", content);
@@ -60,7 +60,7 @@ $(window).load(function() {
   });
 
   $(".arrowl").click(function() {
-    var imgSrc = $(".lightbox img").attr("src");
+    /*var imgSrc = $(".lightbox img").attr("src");*/
     var head = $(".lightbox img").attr("alt");
     var conte = $(".lightbox img").attr("title");
     var search = $("section").find("img[src$='" + imgSrc + "']");

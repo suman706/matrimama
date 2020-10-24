@@ -362,6 +362,8 @@ column-width: 300px;
 column-gap: 20px;
 padding: 20px;
 margin-bottom: -22%;
+-webkit-margin-bottom:0%;
+-moz-margin-bottom:0%;
 }
 section img {
 width: 100%;
