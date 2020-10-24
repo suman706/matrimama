@@ -38,13 +38,13 @@ $(window).load(function() {
     var head = $(".lightbox img").attr("alt");
     var conte = $(".lightbox img").attr("title");
     var search = $("section").find("img[src$='" + imgSrc + "']");
-    var search1 = $("section").find("img[alt$='" + head + "']");
-    var search2 = $("section").find("img[title$='" + conte + "']");
+    var search = $("section").find("img[alt$='" + head + "']");
+    /*var search = $("section").find("img[title$='" + conte + "']");*/
     var newImage = search.next().attr("src");
-    var heading = search1.next().attr("alt");
-    var content = search2.next().attr("title");
+    var heading = search.next().attr("alt");
+    var content = search.next().attr("title");
 
-    /*$(".lightbox img").attr("src", search.next());*/
+    $(".lightbox img").attr("src", search.next());
     $(".lightbox img").attr("src", newImage);
     $(".lightbox img").attr("alt", heading);
     $(".lightbox img").attr("title", content);
