@@ -64,8 +64,8 @@ $(window).load(function() {
     var head = $(".lightbox img").attr("alt");
     var conte = $(".lightbox img").attr("title");
     var search = $("section").find("img[src$='" + imgSrc + "']");
-    var search1 = $("section").find("img[alt$='" + head + "']");
-    var search2 = $("section").find("img[title$='" + conte + "']");
+    var search = $("section").find("img[alt$='" + head + "']");
+    /*var search2 = $("section").find("img[title$='" + conte + "']");*/
     var newImage = search.prev().attr("src");
     var heading = search.prev().attr("alt");
     var content = search.prev().attr("title");
