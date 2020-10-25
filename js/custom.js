@@ -29,6 +29,18 @@
 
 	var family_form = document.getElementById("family_form");
 	family_form.style.display = "none";
+
+	var about_menu = document.getElementById("about_menu");
+	about_menu.style.display = "none";
+
+	var about_form = document.getElementById("about_form");
+	about_form.style.display = "none";
+
+	var lifestyle_menu = document.getElementById("lifestyle_menu");
+	lifestyle_menu.style.display = "none";
+
+	var lifestyle_form = document.getElementById("lifestyle_form");
+	lifestyle_form.style.display = "none";
 //======================================================================
 //======================================================================
 
@@ -170,4 +182,60 @@ function education(){
 
 	var family_form = document.getElementById("family_form");
 	family_form.style.display = "none";
+}
+
+function next6(){
+	var about_menu = document.getElementById("about_menu");
+	about_menu.style.display = "block";
+
+	var about_form = document.getElementById("about_form");
+	about_form.style.display = "block";
+
+	var family_menu = document.getElementById("family_menu");
+	family_menu.style.display = "none";
+
+	var family_form = document.getElementById("family_form");
+	family_form.style.display = "none";
+}
+
+function family(){
+	var about_menu = document.getElementById("about_menu");
+	about_menu.style.display = "none";
+
+	var about_form = document.getElementById("about_form");
+	about_form.style.display = "none";
+
+	var family_menu = document.getElementById("family_menu");
+	family_menu.style.display = "block";
+
+	var family_form = document.getElementById("family_form");
+	family_form.style.display = "block";	
+}
+
+function next7(){
+	var lifestyle_menu = document.getElementById("lifestyle_menu");
+	lifestyle_menu.style.display = "block";
+
+	var lifestyle_form = document.getElementById("lifestyle_form");
+	lifestyle_form.style.display = "block";
+
+	var about_menu = document.getElementById("about_menu");
+	about_menu.style.display = "none";
+
+	var about_form = document.getElementById("about_form");
+	about_form.style.display = "none";
+}
+
+function about_my(){
+	var lifestyle_menu = document.getElementById("lifestyle_menu");
+	lifestyle_menu.style.display = "none";
+
+	var lifestyle_form = document.getElementById("lifestyle_form");
+	lifestyle_form.style.display = "none";
+
+	var about_menu = document.getElementById("about_menu");
+	about_menu.style.display = "block";
+
+	var about_form = document.getElementById("about_form");
+	about_form.style.display = "block";
 }
