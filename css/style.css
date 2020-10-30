@@ -163,8 +163,8 @@ display: flex;
 .logo img{
 width: 80%;
 height: auto;
-padding-left: 50px;
-padding-right: 50px;
+/*padding-left: 50px;
+padding-right: 50px;*/
 padding-bottom: 30px;
 padding-top: 20px;
 }
@@ -206,9 +206,8 @@ display: none;
 }
 }
 .register_with{
-text-align: center;
-margin-left: 0px;
-margin-top: 25px;
+margin-left: -50px;
+margin-top: 20px;
 }
 /*===================slider=====================*/
 .slider{
@@ -338,6 +337,7 @@ display: none;
 }
 /*=================gallery=======================*/
 section {
+height: 1100px;
 -webkit-column-width: 300px;
 -moz-column-width: 300px;
 column-width: 300px;
@@ -345,9 +345,9 @@ column-width: 300px;
 -moz-column-gap: 20px;
 column-gap: 20px;
 padding: 20px;
-margin-bottom: -22%;
 -webkit-margin-bottom:0%;
 -moz-margin-bottom:0%;
+margin-bottom: -22%;
 }
 section img {
 width: 100%;
