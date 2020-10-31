@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Matrimama | Basic_details</title>
 	<!--================= css ============================-->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<!--=====================bootstrap====================-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- =============== font-awesome ====================-->
@@ -22,6 +22,10 @@
 		.citizen{
 			margin-left: -15px;
 		}
+		.location{
+			color: orange;
+			font-size: 30px;
+		}
 		@media only screen and (max-width: 600px) {
 			.citizen{
 				margin-left: 0px;
@@ -30,144 +34,6 @@
 	</style>
 </head>
 <body>
-	<header>
-		<div class="container-fluid">
-			<!---================== Top_Bar================-->
-			<div class="row">
-				<div class="top_bar">
-					<button class="bttn">Login</button>
-					<button class="bttn">Help</button>
-					<div class="dropdown">
-					    <p class="dropdown-toggle lang" data-toggle="dropdown">English
-					    <span class="caret"></span></p>
-					    <ul class="dropdown-menu p-2 lang1">
-					      <li><a href="#">Hindi</a></li>
-					      <li><a href="#">France</a></li>
-					    </ul>
-					</div>
-					<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
-				</div>
-			</div>
-			<!----------------- End top bar ------------------->
-			
-			<div class="row">
-				<div class="menu_bar">
-					<div class="col-lg-4">
-						<div class="logo">
-							<img src="./image/logo.png" alt="logo">
-						</div>
-					</div>
-					<div class="icon col-lg-6">
-						<form>
-							<div class="form-check form-check-inline">
-								<label for="self" class="form-check-label font-weight-bold">Create profile for :</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="self" class="form-check-input" name="category" value="self">
-								<label for="self" class="form-check-label">Self</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="son" class="form-check-input" name="category" value="son">
-								<label for="son" class="form-check-label">Son</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="Daughter" class="form-check-input" name="category" value="daughter">
-								<label for="daughter" class="form-check-label">Daughter</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="Brother" class="form-check-input" name="category" value="brother">
-								<label for="brother" class="form-check-label">Brother</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="sister" class="form-check-input" name="category" value="sister">
-								<label for="sister" class="form-check-label">Sister</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="Friend" class="form-check-input" name="category" value="friend">
-								<label for="friend" class="form-check-label">Relative/Friend</label>
-							</div>
-							<br>
-							<div class="main">
-								<div>
-									<label for="email">Email Address</label><br>
-									<input type="email" id="email" name="email" required>
-								</div>
-								<div>
-									<label for="phone">Mobile No.</label><br>
-									<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-								</div>
-								<div>
-									<label for="password">Password</label><br>
-									<input type="password" id="password" name="password" required>
-								</div>
-								
-							</div>
-						</form>
-					</div>
-					<div class="col-lg-2">
-						<button class="register_btn">REGISTER FREE</button>
-						<p class="register_with">Register with<br>
-							<a href="#"><img src="./image/svg/facebook.svg" alt="facebook" class="face_book"></a>
-							<a href="#"><img src="./image/svg/instagram.svg" alt="instagram" class="face_book"></a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!--===================== Form steps =============---->
-	<div class="container" id="basic_menu">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="main d-flex text-center steps">
-					<div>
-						<span class="spanicon"><i class="fa fa-address-book" class="icon1"></i></span><br>
-						<p class="options">Register</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="spanicon"><i class="fa fa-chrome" class="icon1" ></i></span><br>
-						<p class="options">Photo upload</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="bg-dark text-white spanicon"><i class="fa fa-address-book" class="icon1"></i></span><br>
-						<p class="options">Basic details</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="spanicon"><i class="fa fa-users" class="icon1"></i></span><br>
-						<p class="options">Religion/Caste</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="spanicon"><i class="fa fa-briefcase" class="icon1"></i></span><br>
-						<p class="options">Career & <br>Educational <br>Education</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="spanicon"><i class="fa fa-users" class="icon1"></i></span><br>
-						<p class="options">Family Details</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="spanicon"><i class="fa fa-user" class="icon1"></i></span><br>
-						<p class="options">About My Self</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="spanicon"><i class="fa fa-user-md" class="icon1"></i></span><br>
-						<p class="options">Lifestyle</p>
-					</div>
-					<div class="icon2"></div>
-					<div>
-						<span class="spanicon"><i class="fa fa-user-md" class="icon1"></i></span><br>
-						<p class="options">Partner<br>Preference</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<!--===================== form =====================-->
 	<div class="container" id="basic_form"> 
 		<div class="row">
@@ -178,7 +44,7 @@
 			</div>
 			<div class="col-lg-9 upload_details">
 				<div class="row">
-					<div class="col-lg-9 second-side">
+					<div class="col-lg-10 second-side">
 						<h4>Personal Details to help you get best matches</h4>
 						<p class="basic_gender"><b>Gender </b><span class="star">*</span></p>
 						<div class="form-check form-check-inline">
@@ -229,6 +95,129 @@
 							    </select>
 						    </div>
 						</div>
+						<div class="main">
+							<div>
+						    	<label>Height</label>
+						    	<p class="d-flex"><input type="text" placeholder="0" class="w-25 form-control">&nbsp; Feet &nbsp;<input type="text" placeholder="0" class="w-25 form-control">&nbsp; inch</p>
+						    </div>
+						    <div>
+						    	<label>Weight(In Kgs)</label>
+						    	<input type="text" placeholder="0" class="form-control w-100">
+						    </div>
+						    <div class="form-check" style="width: 230px; padding-top: 50px;">
+						    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+    							<label class="form-check-label" for="exampleCheck1">Hide Weight?</label>
+						    </div>	
+						</div>
+						<div>
+							<span class="location">location</span>
+						</div>
+						<div class="form-group w-50">
+						    <label for="inputState">Country <span class="star">*</span></label>
+						    <select id="country" class="form-control">
+						        <option selected>Choose...</option>
+						        <option>India</option>
+								<option>USA</option>
+								<option>JAPAN</option>
+								<option>SPAIN</option>
+						    </select>
+					    </div>
+					    <form class="py-1">
+							<div class="form-check form-check-inline w-25">
+								<label for="self" class="form-check-label font-weight-bold">Body Type <span class="star">*</span></label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="slim" class="form-check-input" name="category" value="self">
+								<label for="slim" class="form-check-label">slim</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="athletic" class="form-check-input" name="category" value="self">
+								<label for="Athletic" class="form-check-label">Athletic</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="average" class="form-check-input" name="category" value="self">
+								<label for="Average" class="form-check-label">Average</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="heavy" class="form-check-input" name="category" value="self">
+								<label for="Heavy" class="form-check-label">Heavy</label>
+							</div>
+						</form>
+						<div class="py-1">
+							<div class="form-check form-check-inline w-25">
+								<label for="self" class="form-check-label font-weight-bold">Complexion <span class="star">*</span></label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="very_fair" class="form-check-input" name="category" value="self">
+								<label for="very_fair" class="form-check-label">Very Fair</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="fair" class="form-check-input" name="category" value="self">
+								<label for="fair" class="form-check-label">Fair</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="whiteish" class="form-check-input" name="category" value="self">
+								<label for="Whiteish" class="form-check-label">Whiteish</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="whiteish_brown" class="form-check-input" name="category" value="self">
+								<label for="Whiteish_brown" class="form-check-label">Whiteish Brown</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="dark" class="form-check-input" name="category" value="self">
+								<label for="dark" class="form-check-label">Dark</label>
+							</div>
+						</div>
+						<div class="py-1">
+							<div class="form-check form-check-inline w-25">
+								<label for="self" class="form-check-label font-weight-bold">Physical Status <span class="star">*</span></label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="normal" class="form-check-input" name="category" value="self">
+								<label for="normal" class="form-check-label">Normal</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="hysically" class="form-check-input" name="category" value="self">
+								<label for="Physically" class="form-check-label">Physically Challenged</label>
+							</div>
+						</div>
+						<div class="py-1">
+							<div class="form-check form-check-inline w-25">
+								<label for="self" class="form-check-label font-weight-bold">Blood Group</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_a" class="form-check-input" name="category" value="self">
+								<label for="group_a" class="form-check-label">A+</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_o" class="form-check-input" name="category" value="self">
+								<label for="group_o" class="form-check-label">O+</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_b" class="form-check-input" name="category" value="self">
+								<label for="group_b" class="form-check-label">B+</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_ab" class="form-check-input" name="category" value="self">
+								<label for="group_ab" class="form-check-label">AB+</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_a_negative" class="form-check-input" name="category" value="self">
+								<label for="group_a" class="form-check-label">A-</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_o_negative" class="form-check-input" name="category" value="self">
+								<label for="group_o" class="form-check-label">O-</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_b_negative" class="form-check-input" name="category" value="self">
+								<label for="group_b" class="form-check-label">B-</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="group_ab_negative" class="form-check-input" name="category" value="self">
+								<label for="group_ab" class="form-check-label">AB-</label>
+							</div>
+						</div>
 						<button class="save" onclick="photoupload()">Previous</button>
 						<button class="save" onclick="next3()">Save & Continue</button>
 						<a href="#" onclick="next3()">Skip</a>
@@ -238,46 +227,6 @@
 		</div>
 	</div>
 	<!--===================== footer ===================-->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-sm-6">
-					<h6>Need Help?</h6>
-					<ul>
-						<li><a href="#">Member Login</a></li>
-						<li><a href="#">Sign Up</a></li>
-						<li><a href="#">Customer Support</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-sm-6">
-					<h6>Company</h6>
-					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-sm-6">
-					<h6>Privacy & Legal</h6>
-					<ul>
-						<li><a href="#">Terms of Use</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-sm-6">
-					<h6>Customer Service (Toll free)</h6>
-					<ul>
-						<li><a href="#">1-800-419-6299</a></li>
-						<li>Follow us on</li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-sm-12">
-					<p>This website is strictly for matrimonial purpose only and not a dating website<br>
-					Copyright &#169; 2020 matrimama.com, the most trusted matrimony brand</p>
-					<button class="footer_btn">Ask/Chat Now</button>
-				</div>
-			</div>
-		</div>
-	</footer>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
   	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
