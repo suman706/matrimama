@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Matrimama | My_Profile</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+	<!--=====================bootstrap====================-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- =============== font-awesome ====================-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+	.notice{
+		height: 200px;
+		width: 100%;
+		background-color: #cccccc;
+	}
+	.null{
+		color: #40968B;
+	}
+	.profile_created{
+		color: #F1794D;
+		font-weight: 600;
+	}
+	.phone_icon{
+		height: 45px;
+		padding-right: 10px;
+	}
+	.email_icon{
+		height: 20px;
+		padding-right: 10px;
+	}
+	.upload_my_photo{
+		background-color: #F1784D;
+		color: #fff;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.edit_details{
+		background-color: #F6F6F6;
+		margin-top:10px;
+		margin-bottom: 20px;
+		padding:20px;
+	}
+	.edit{
+		height: 20px;
+	}
+	.edit_details h5{
+		color: #40968B;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+</style>
+<body>
+	<header>
+		<div class="container-fluid">
+			<!---================== Top_Bar================-->
+			<div class="row">
+				<div class="top_bar">
+					<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
+					<i class="fa fa-bars float-right mt-3" style="font-size:26px" type="button" data-toggle="dropdown" id="faicon"></i>
+	                    <ul class="col-lg-2 col-sm-2 dropdown-menu px-4 mt-3 " id="dropnav">
+	                        <li><a class="text-white" href="index.html">Home</a></li>
+	                        <li><a class="text-white" href="about_us.html">About</a></li>
+	                        <li><a class="text-white" href="https://www.astromitra.com/online_horoscope/free-horoscope-compatibility.php" target="_blank">Free Horoscope</a></li>
+	                        <li><a class="text-white" href="privacy_policy.html">Privacy Policy</a></li>
+	                        <li><a class="text-white" href="contact_us.html">Contact Us</a></li>
+	                        <p>Need any Help? Write to us at <span style="color: black;"><b>support@wedding.com</b></span> or Call us at +91-124-2659 OR ELSE Give us your mailid/ phone number we will get in touch with in 18 hrs</p>
+	                        <input type="text" placeholder="Full Name" class="form-control mb-2">
+	                        <input type="email" placeholder="Email" class="form-control mb-2">
+	                        <input type="number" name="number" id="" placeholder="Contact No" class="form-control">
+	                        <button class="bttn float-left">Submit</button>
+						</ul>
+					<button class="bttn help_btn">Help</button>
+					<button class="bttn logout">Logout</button>
+					<div class="dropdown langu">
+					<p class="dropdown-toggle lang" data-toggle="dropdown">English
+						<span class="caret"></span></p>
+						<ul class="dropdown-menu p-2 lang1">
+							<li><a href="#">Hindi</a></li>
+							<li><a href="#">Bangoli</a></li>
+						</ul>
+				</div>
+					<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
+					<img src="./image/svg/user.svg" alt="user" class="user_icon_s">
+
+					</div>
+			</div>
+
+			<!----------------- End top bar ------------------->
+					
+			<div class="row login_menu_bar">
+				<div class="col-lg-4">
+					<div class="logo">
+						<img src="./image/logo.png" alt="logo" class="login_logo_bar">
+					</div>
+				</div>
+				<div class="col-lg-8 shortlisted_section">
+					<a href="#" class="shortlist_ancor">Your Shortlisted<span class="number">(0)</span></a>
+					<a href="#" class="shortlist_ancor">You Interested<span class="number">(0)</span></a>
+					<a href="#" class="shortlist_ancor">New Matches<span class="number">(0)</span></a>
+					<a href="#" class="shortlist_ancor">Recently Viewed<span class="number">(0)</span></a>
+					<i class="fa fa-envelope menu_icon"></i>
+					<i class="fa fa-bell menu_icon"></i>
+					<img src="./image/svg/user.svg" alt="user" class="user_icon_fullscreen" type="button" data-toggle="dropdown" id="faicon">
+						<ul class="col-lg-3 col-sm-2 dropdown-menu px-4 mt-3" id="dropnav" class="dropnav">
+	                        <li><a class="text-white" href="myprofile.html">My Profile</a></li>
+	                        <li><a class="text-white" href="">Edit/Upload Photo</a></li>
+	                        <li><a class="text-white" href="">Desired Partner Profile</a></li>
+	                        <li><a class="text-white" href="">Hide/ Delete Profile</a></li>
+	                        <li><a class="text-white" href="">Change Password</a></li>
+	                        <button class="bttn float-left">Logout</button>
+	                    </ul><br>
+	                <div class="third_row">
+	                	<img src="./image/match.png" alt="match"class="match">
+		                <label for="search">Search for Profile</label>
+		                <input type="text">
+		                <button class="btn btn-sm" id="edit_bttton">Edit Profile</button>
+		            </div>
+				</div>	
+			</div>
+		</div>
+	</header>
+	<!--=======================End Header section ============================-->
+	<div class="container pt-4">
+		<div class="row">
+			<div class="col-lg-3 notice"></div>
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-12">
+						<h4 class="null">NULL NULL</h4>
+						<h5 class="profile_created">PROFILE CREATED FOR SELF</h5>
+					</div>
+					<div class="col-lg-6">
+						<p>51 yrs Yrs, 0'0"</p>
+						,<br>,<br>,
+					</div>
+					<div class="col-lg-6">
+						<div class="main">
+							<img src="./image/phone.png" alt="phone" class="phone_icon">
+							<p>+916206823426 <br><span class="star fa">(&#xf057; Not Verified)</span></p>
+						</div>
+						<div class="main">
+							<img src="./image/Email.png" alt="email" class="email_icon">
+							<p>skrk81002@gmail.com <br><span class="star fa">(&#xf057; Not Verified)</span></p>
+						</div>
+					</div>
+					<div class="col-lg-12 upload_my_photo">
+						<p class="text-center">Need any help? Write to us at support@wedding.com</p>
+						<div class="row">
+							<div class="col-lg-3 text-center my-2">
+								<img src="./image/upload.png" alt="upload">
+							</div>
+							<div class="col-lg-8 ml-3">
+								<form>
+									<div class="custom-file">
+									    <input type="file" class="custom-file-input" id="customFile">
+									    <label class="custom-file-label" for="customFile">Change or Upload Photo</label>
+								    </div>
+								</form>
+								<p>or<br>Select your profile photo from</p>
+								<a href="#"><img src="./image/face.png" alt="facebook" class="mr-2"></a>
+								<a href="#"><img src="./image/ins.png" alt="instagram" class="mx-2"></a>
+								<a href="#"><img src="./image/gall.png" alt="gallery" class="mx-2"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 edit_details">
+						<div class="row">
+							<div class="col-lg-11">
+								<h5>BASIC DETAILS</h5>
+							</div>
+							<div class="col-lg-1">
+								<a href="#"><img src="./image/edit.png" alt="edit" class="edit"></a>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Date of Birth :</b> 1970-Jan-01</p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Gender : </b> Male</p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Weight : </b></p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Body Type : </b></p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Complexion : </b></p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Blood Group : </b></p>
+							</div>
+						<!---====================== Location ===========================-->
+							<div class="col-lg-11">
+								<h5>LOCATION</h5>
+							</div>
+							<div class="col-lg-1">
+								<a href="#"><img src="./image/edit.png" alt="edit" class="edit"></a>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Country :</b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>City/District : </b></p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>State/Division/Province : </b></p>
+							</div>
+						<!---====================== Family Information ===========================-->
+							<div class="col-lg-11">
+								<h5>FAMILY INFORMATION</h5>
+							</div>
+							<div class="col-lg-1">
+								<a href="#"><img src="./image/edit.png" alt="edit" class="edit"></a>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Family Type :</b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Family Location : </b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Family Values :</b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Native Place : </b></p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Family Annual Income : </b></p>
+							</div>
+						<!---======================Basic Lifestyle ===========================-->
+							<div class="col-lg-11">
+								<h5>BASIC LIFESTYLE</h5>
+							</div>
+							<div class="col-lg-1">
+								<a href="#"><img src="./image/edit.png" alt="edit" class="edit"></a>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Diet :</b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Smoking Habbits : </b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>House Living In :</b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Own a Car : </b>No</p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Wedding Style : </b></p>
+							</div>
+							<div class="col-lg-6">
+								<p><b>Open to Pets : </b>No</p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Drinking Habbits : </b></p>
+							</div>
+						<!---======================Hobbies & Interests ===========================-->
+							<div class="col-lg-11">
+								<h5>HOBBIES & INTERESTS</h5>
+							</div>
+							<div class="col-lg-1">
+								<a href="#"><img src="./image/edit.png" alt="edit" class="edit"></a>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Hobbies : </b>NA</p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Interests : </b>NA</p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Favorite Music : </b>NA</p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Favorite Cuisine : </b>NA</p>
+							</div>
+							<div class="col-lg-12">
+								<p><b>Preferred Movies : </b>NA</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="col-lg-3">
+				<img src="./image/horoscope.png" alt="horoscope">
+			</div>
+		</div>
+	</div>
+	<!--======================footer===========================-->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-sm-12">
+					<h5>Need Help?</h5>
+					<ul>
+						<li><a href="#">Member Login</a></li>
+						<li><a href="#">Sign Up</a></li>
+						<li><a href="#">Customer Support</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-12 company">
+					<h5>Company</h5>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-12">
+					<h5>Privacy & Legal</h5>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-12">
+					<h5>Customer Service (Toll free)</h5>
+					<ul>
+						<li><a href="#">1-800-419-6299</a></li>
+						<li>Follow us on</li>
+						<div class="d-flex">
+							<li><a href="#"><img src="./image/facebook-logo.svg" alt="" class="footer_social_media"></a></li>
+							<li><a href="#"><img src="./image/twitter.svg" alt="" class="footer_social_media"></a></li>
+							<li><a href="#"><img src="./image/instagram.svg" alt="" class="footer_social_media"></a></li>
+							<li><a href="#"><img src="./image/google-plus.svg" alt="" class="footer_social_media"></a></li>
+						</div>
+					</ul>
+				</div>
+				<div class="col-lg col-sm-12">
+					<p>This website is strictly for matrimonial purpose only and not a dating website<br>
+					Copyright &#169; 2020 matrimama.com, the most trusted matrimony brand</p>
+					<button class="footer_btn">Ask/Chat Now</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- java script---->
+	<script src="js/custom.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
