@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Matrimama | Partner</title>
+	<!--================= css ============================-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--=====================bootstrap====================-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- =============== font-awesome ====================-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css"> 
+
+	<style>
+       .hr{
+			height: 2px;
+			width: 100%;
+			background: gray;
+		}
+		body{
+        font-family: sans-serif;
+        font-size:14px;
+      }
+      input[type='range'] {
+        width: 700px;
+        height: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        outline: none;
+      }
+      input[type='range'],
+      input[type='range']::-webkit-slider-runnable-track,
+      input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background: none;
+      }
+      input[type='range']::-webkit-slider-runnable-track {
+        width: 200px;
+        height: 4px;
+        background: #0c8260;
+      }
+      input[type='range']:nth-child(2)::-webkit-slider-runnable-track{
+        background: none;
+      }
+
+input[type='range']::-webkit-slider-thumb {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin-top: -7px;
+  background: #fff;
+  border: 1px solid #0c8260;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+
+input[type='range']:nth-child(1)::-webkit-slider-thumb{
+  z-index: 2;
+}
+
+.rangeslider{
+    position: relative;
+    height: 60px;
+    width: 210px;
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: 20px;
+}
+.rangeslider input{
+    position: absolute;
+}
+.rangeslider{
+    position: absolute;
+}
+
+.rangeslider span{
+    position: absolute;
+    margin-top: 20px;
+}
+
+.rangeslider .right{
+   position: relative;
+   float: right;
+   
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<!---================== Top_Bar================-->
+			<div class="row">
+				<div class="top_bar">
+					<button class="bttn">Login</button>
+					<button class="bttn">Help</button>
+					<div class="dropdown">
+					    <p class="dropdown-toggle lang" data-toggle="dropdown">English
+					    <span class="caret"></span></p>
+					    <ul class="dropdown-menu p-2 lang1">
+					      <li><a href="#">Hindi</a></li>
+					      <li><a href="#">France</a></li>
+					    </ul>
+					</div>
+					<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
+				</div>
+			</div>
+			<!----------------- End top bar ------------------->
+			
+			<div class="row">
+				<div class="menu_bar">
+					<div class="col-lg-4">
+						<div class="logo">
+							<img src="./image/logo.png" alt="logo">
+						</div>
+					</div>
+					<div class="icon col-lg-6">
+						<form>
+							<div class="form-check form-check-inline">
+								<label for="self" class="form-check-label font-weight-bold">Create profile for :</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="self" class="form-check-input" name="category" value="self">
+								<label for="self" class="form-check-label">Self</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="son" class="form-check-input" name="category" value="son">
+								<label for="son" class="form-check-label">Son</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="Daughter" class="form-check-input" name="category" value="daughter">
+								<label for="daughter" class="form-check-label">Daughter</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="Brother" class="form-check-input" name="category" value="brother">
+								<label for="brother" class="form-check-label">Brother</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="sister" class="form-check-input" name="category" value="sister">
+								<label for="sister" class="form-check-label">Sister</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" id="Friend" class="form-check-input" name="category" value="friend">
+								<label for="friend" class="form-check-label">Relative/Friend</label>
+							</div>
+							<br>
+							<div class="main">
+								<div>
+									<label for="email">Email Address</label><br>
+									<input type="email" id="email" name="email" required>
+								</div>
+								<div>
+									<label for="phone">Mobile No.</label><br>
+									<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+								</div>
+								<div>
+									<label for="password">Password</label><br>
+									<input type="password" id="password" name="password" required>
+								</div>
+								
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-2">
+						<button class="register_btn">REGISTER FREE</button>
+						<p class="register_with">Register with<br>
+							<a href="#"><img src="./image/svg/facebook.svg" alt="facebook" class="face_book"></a>
+							<a href="#"><img src="./image/svg/instagram.svg" alt="instagram" class="face_book"></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--===================== Form steps =============---->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main d-flex text-center steps">
+					<div>
+						<span class="spanicon"><i class="fa fa-address-book" class="icon1"></i></span><br>
+						<p class="options">Register</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="spanicon"><i class="fa fa-chrome" class="icon1" ></i></span><br>
+						<p class="options">Photo upload</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="spanicon"><i class="fa fa-address-book" class="icon1"></i></span><br>
+						<p class="options">Basic details</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="spanicon"><i class="fa fa-users" class="icon1"></i></span><br>
+						<p class="options">Religion/Caste</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="spanicon"><i class="fa fa-briefcase" class="icon1"></i></span><br>
+						<p class="options">Career & <br>Educational <br>informtion</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="spanicon"><i class="fa fa-users" class="icon1"></i></span><br>
+						<p class="options">Family Details</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="spanicon"><i class="fa fa-user" class="icon1"></i></span><br>
+						<p class="options">About My Self</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="spanicon"><i class="fa fa-user-md" class="icon1"></i></span><br>
+						<p class="options">Lifestyle</p>
+					</div>
+					<div class="icon2"></div>
+					<div>
+						<span class="bg-dark text-white spanicon"><i class="fa fa-user-md" class="icon1"></i></span><br>
+						<p class="options">Partner<br>Preference</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--===================== form =====================-->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 side-bar">
+				<img src="./image/svg/woman.svg" alt="side_bar_logo" class="side_bar_logo">
+				<h3>Great</h3>
+				<p>You have completed 10% of your account</p>
+			</div>
+			<div class="col-lg-9 upload_details">
+				<p class="right_side_logo2"><i class="fa fa-book" style="color: black"></i> Talk to your Matches</p>
+				<div class="row  pr-3">
+					<div class="col-lg-12">
+						<h2>Partner Preference</h2>
+						<h5>Tell us what you looking for in a life partner. </h5><br>
+						<p>The Creteria you mention here determines the 'Desired Partner Matches' you se so please review the information carefully.</p>
+						<form action="">
+							<div class="row pb-4">
+								<div class="form-group col-md-12">
+									<label for="Caste">Age (Yrs)</label><br>
+								    <b><div class="rangeslider">
+                                		<input class="min" name="range_1" type="range" min="18" max="70" value="20" />
+                                		<input class="max" name="range_1" type="range" min="18" max="70" value="60" />
+                                		<span class="range_min light left">20</span>
+                                		<span class="range_max light right">60</span>
+                              		</div></b>
+								</div>	
+						    </div>
+						    <div class="row pb-4">
+								<div class="form-group col-md-12">
+									<label for="Caste">Height (Inches)</label><br>
+								    <b><div class="rangeslider">
+              							<input class="min" name="range_1" type="range" min="48" max="75" value="55" />
+              							<input class="max" name="range_1" type="range" min="48" max="75" value="65" />
+              							<span class="range_min light left">55</span>
+              							<span class="range_max light right">65</span>
+            						</div></b>
+								</div>	
+						    </div>
+							<div class="row">
+								<div class="form-group col-md-6">
+                                    <label for="Martial Status">Martial Status<span class="star">*</span></label>
+                               		<select class="form-control text-danger" required id="Martial Status">
+                                  		<option></option>
+                                  		<option>Single</option>
+                                  		<option>Married</option>
+                               	 	</select>
+							   	</div>
+								<div class="form-group col-md-6">
+                               		<label for="Religion">Religion<span class="star">*</span></label>
+                               		<select class="form-control text-danger" required id="Religion">
+                                  		<option></option>
+                                  		<option>Hindu</option>
+                                  		<option>Muslim</option>
+                                  		<option>Christians</option>
+                                  		<option>Sikhs</option>
+                                  		<option>Jains</option>
+                               		</select>
+								</div>
+								<div class="form-group col-md-12">
+									<label for="Caste">Caste</label><br>
+								    <select class="form-control text-danger" id="Caste">
+                                  		<option>Brahmans</option>
+                                  		<option>Kshatriyas</option>
+                                  		<option>Vaishyas</option>
+                               		</select>
+								</div>
+							</div>
+                          
+							<div class="row">
+							    <div class="col-md-4">
+							    	<label for="Mother Tongue">Mother Tongue</label>
+                               		<select class="form-control text-danger" id="Mother Tongue">
+                                  		<option></option>
+                                  		<option>English</option>
+                                  		<option>Hindi</option>
+                                  		<option>Tamil</option>
+                               		</select>
+							    </div>
+							    <div class="col-md-4">
+							    	<P><b>Dosh</b></P>
+							   		<div class="form-check form-check-inline">
+								   		<input type="radio" class="form-check-input" name="Dosh">
+								   		<label for="Yes" class="form-check-label">Yes</label>
+							    	</div>
+							    	<div class="form-check form-check-inline">
+								   		<input type="radio" class="form-check-input" name="Dosh">
+								   		<label for="No" class="form-check-label">No</label>
+							    	</div>
+							    	<div class="form-check form-check-inline">
+								   		<input type="radio" class="form-check-input" name="Dosh">
+								   		<label for="Doesn't matter" class="form-check-label">Doesn't matter</label>
+							    	</div>
+							    </div>
+							    <div class="col-md-4">
+							    	<P><b>Manglik </b></P>
+							   		<div class="form-check form-check-inline">
+								   		<input type="radio" class="form-check-input" name="Manglik">
+								   		<label for="Yes" class="form-check-label">Yes</label>
+							    	</div>
+							    	<div class="form-check form-check-inline">
+								   		<input type="radio" class="form-check-input" name="Manglik">
+								   		<label for="No" class="form-check-label">No</label>
+							    	</div>
+							    	<div class="form-check form-check-inline">
+								   		<input type="radio" class="form-check-input" name="Manglik">
+								   		<label for="Doesn't matter" class="form-check-label">Doesn't matter</label>
+							    	</div>
+							    </div>
+						    </div>
+                            <!-----------Location----------->
+						    <div class="row">
+							    <div class="col-md-2"> 
+							      <h4 class="text-danger">Location</h4>
+							    </div>
+							    <div class="col-md-10 px-1 mt-3"> 
+							       <div class="hr"></div>
+							    </div>
+						    </div>
+
+						    <div class="row">
+								<div class="form-group col-md-6">
+                               		<label for="Country">Country<span class="star">*</span></label>
+                               		<select class="form-control text-danger" required id="Country">
+                                  		<option></option>
+                                  		<option>India</option>
+                                  		<option>USA</option>
+                                  		<option>Pakistan</option>
+                                  		<option>Nepal</option>
+                                  		<option>Canada</option>
+                               		</select>
+								</div>
+								<div class="form-group col-md-6">
+                               		<label for="State">State/Division/Province</label>
+                               		<select class="form-control text-danger" id="State">
+                                  		<option></option>
+                                  		<option>Bihar</option>
+                                  		<option>Sikkim</option>
+                                  		<option>Goa</option>
+                                  		<option>Chandigarh</option>
+                                  		<option>Assam</option>
+                               		</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="City">City/ District</label><br>
+								<select class="form-control text-danger" id="City">
+                                  	<option>Select Cities</option>
+                                  	<option>Mumbai</option>
+                                  	<option>Delhi</option>
+                                  	<option>Kolkata</option>
+                                  	<option>Chennai</option>
+                                  	<option>Patna</option>
+                                </select>
+							</div>
+
+							<!--=======Education/Career=======-->
+							<div class="row">
+							    <div class="col-md-3"> 
+							      <h4 class="text-danger">Education/Career</h4>
+							    </div>
+							    <div class="col-md-9 px-1 mt-3"> 
+							       <div class="hr"></div>
+							    </div>
+						    </div>
+
+							<div class="form-group">
+                                <label for="Indrustry">Higest Education Qualification</label>
+                                <select class="form-control text-danger" id="Indrustry">
+                                    <option>Select Education</option>
+                                    <option>M.Tech</option>
+                                    <option>B.Tech</option>
+                                    <option>MBA</option>
+                                </select>
+							</div>
+							<div class="form-group">
+                                <label for="Designation">Specialization</label>
+                                <select class="form-control text-danger" id="Designation">
+                                    <option>Select Specialization</option>
+                                    <option>Web Development</option>
+                                    <option>Software Development</option>
+                                    <option>Engineering</option>
+                                </select>
+							</div>
+							<div class="form-group">
+                                <label for="Designation">Occupation</label>
+                                <select class="form-control text-danger" id="Designation">
+                                    <option>Select Occupation</option>
+                                    <option>Web Development</option>
+                                    <option>Software Development</option>
+                                    <option>Engineering</option>
+                                </select>
+							</div>
+							<div class="form-group">
+                                <label for="Designation">Annual Income</label>
+                                <select class="form-control text-danger" id="Designation">
+                                    <option></option>
+                                    <option>5 lac </option>
+                                    <option>6 lac</option>
+                                    <option>8 lac/option>
+                                </select>
+						    </div>
+							<div class="form-group form-check">
+							    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+							    <label class="form-check-label" for="exampleCheck2">I lso want to recieve matches based on the history of my interests and acceptances.</label>
+							</div>  
+							<button class="save">Save & Continue</button>
+							<button class="save">Skip & Continue</button>
+						</form>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--===================== footer ===================-->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-sm-6">
+					<h6>Need Help?</h6>
+					<ul>
+						<li><a href="#">Member Login</a></li>
+						<li><a href="#">Sign Up</a></li>
+						<li><a href="#">Customer Support</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<h6>Company</h6>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<h6>Privacy & Legal</h6>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<h6>Customer Service (Toll free)</h6>
+					<ul>
+						<li><a href="#">1-800-419-6299</a></li>
+						<li>Follow us on</li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<p>This website is strictly for matrimonial purpose only and not a dating website<br>
+					Copyright &#169; 2020 matrimama.com, the most trusted matrimony brand</p>
+					<button class="footer_btn">Ask/Chat Now</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">(function() {
+
+        function addSeparator(nStr) {
+            nStr += '';
+            var x = nStr.split('.');
+            var x1 = x[0];
+            var x2 = x.length > 1 ? '.' + x[1] : '';
+            var rgx = /(\d+)(\d{3})/;
+            while (rgx.test(x1)) {
+                x1 = x1.replace(rgx, '$1' + '.' + '$2');
+            }
+            return x1 + x2;
+        }
+
+        function rangeInputChangeEventHandler(e){
+            var rangeGroup = $(this).attr('name'),
+                minBtn = $(this).parent().children('.min'),
+                maxBtn = $(this).parent().children('.max'),
+                range_min = $(this).parent().children('.range_min'),
+                range_max = $(this).parent().children('.range_max'),
+                minVal = parseInt($(minBtn).val()),
+                maxVal = parseInt($(maxBtn).val()),
+                origin = $(this).context.className;
+
+            if(origin === 'min' && minVal > maxVal-5){
+                $(minBtn).val(maxVal-5);
+            }
+            var minVal = parseInt($(minBtn).val());
+            $(range_min).html(addSeparator(minVal*1));
+
+
+            if(origin === 'max' && maxVal-5 < minVal){
+                $(maxBtn).val(5+ minVal);
+            }
+            var maxVal = parseInt($(maxBtn).val());
+            $(range_max).html(addSeparator(maxVal*1));
+        }
+
+     $('input[type="range"]').on( 'input', rangeInputChangeEventHandler);
+})();</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/script.js"></script>
+  	
+</body>
+</html>

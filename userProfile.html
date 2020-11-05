@@ -1,222 +1,444 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<title>Matrimama | UserProfile</title>
-	<!--================= css ============================-->
-	<link rel="stylesheet" href="css/style.css">
-	<!--=====================bootstrap====================-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css"> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-</head>
-<body>
-	<div class="col-md-3 bg-success py-4">
-		
-		<!--=======FAQ======-->
-		<div id="accordion">
-      <div class="card">
-       	<h3 class="bg-white text-center">0 Matches</h3>
-       	<div class="card-header bg-success">
-       		<a class="card-link text-white h5" data-toggle="collapse" href="#collapseOne">Age (Yrs)</a>
-      	</div>
-       	<div id="collapseOne" class="collapse show bg-success" data-parent="#accordion">
-					<div data-role="rangeslider">
-            <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40"  data-show-value="true">
-            <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80" data-show-value="true">
-          </div>
-				</div>
-  	  </div>
-    	<div class="card">
-        <div class="card-header bg-success">
-        	<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseTwo">Height (cms)</a>
-      	</div>
-      	<div id="collapseTwo" class="collapse bg-success" data-parent="#accordion">
-					<div data-role="rangeslider">
-            <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40"  data-show-value="true">
-            <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80" data-show-value="true">
-          </div>
-      	</div>
-    	</div>
-    	<div class="card">
-        <div class="card-header bg-success">
-          <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseThree">Religion</a>
-      	</div>
-      	<div id="collapseThree" class="collapse" data-parent="#accordion">
-        	<div class="row bg-success text-white pl-4">
-          	<div class="col-lg-6 col-sm-6">
-      				<label class="radio"><input type="radio" name="movie">  Hindus</label>
-              <label class="radio"><input type="radio" name="movie"> Muslims</label>
-              <label class="radio"><input type="radio" name="movie"> Sikhs</label>
-						</div>
-						<div class="col-lg-6 col-sm-6">
-  						<label class="radio"><input type="radio" name="movie">  Christians</label>
-              <label class="radio"><input type="radio" name="movie"> Buddhists</label>
-              <label class="radio"><input type="radio" name="movie"> Jains</label>
-      			</div>
-    			</div>
-        </div>
-    	</div>
-    	<div class="card">
-      	<div class="card-header bg-success">
-      		<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseFour">Caste Group</a>
-      	</div>
-      	<div id="collapseFour" class="collapse" data-parent="#accordion">
-      		<div class="row bg-success text-white pl-4">
-			   		<div class="col-lg-6 col-sm-6">
-      				<label class="radio"><input type="radio" name="movie">  Brahmins</label>
-              <label class="radio"><input type="radio" name="movie"> Kshatriyas</label>
-    		  	</div>
-    				<div class="col-lg-6 col-sm-6">
-    			   	<label class="radio"><input type="radio" name="movie">  Vaishyas</label>
-              <label class="radio"><input type="radio" name="movie"> Shudras</label>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="card">
-    		<div class="card-header bg-success">
-    			<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseFive">Caste</a>
-    		</div>
-    		<div id="collapseFive" class="collapse" data-parent="#accordion">
-      		<div class="row bg-success text-white pl-4">
-						<div class="col-lg-6 col-sm-6">
-      				<label class="radio"><input type="radio" name="movie">  Brahmins</label>
-              <label class="radio"><input type="radio" name="movie"> Kshatriyas</label>
-    				</div>
-    				<div class="col-lg-6 col-sm-6">
-    	     		<label class="radio"><input type="radio" name="movie">  Vaishyas</label>
-              <label class="radio"><input type="radio" name="movie"> Shudras</label>
-    				</div>
-    			</div>
-      	</div>
-    	</div>
-    	<div class="card">
-      	<div class="card-header bg-success">
-      		<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseSix">Mother Tongue</a>
-        </div>
-      	<div id="collapseSix" class="collapse" data-parent="#accordion">
-      		<div class="row bg-success text-white pl-4">
-        		<div class="col-lg-6 col-sm-6">
-    			    <label class="radio"><input type="radio" name="movie">  Hindi</label><br>
-              <label class="radio"><input type="radio" name="movie"> English</label>
-              <label class="radio"><input type="radio" name="movie"> Bangali</label>
-    		  	</div>
-    				<div class="col-lg-6 col-sm-6">
-    					<label class="radio"><input type="radio" name="movie">  Tamil</label><br>
-              <label class="radio"><input type="radio" name="movie"> Odia</label><br>
-              <label class="radio"><input type="radio" name="movie"> Telugu</label>
-    				</div>
-    			</div>
-      	</div>
-    	</div>
-    	<div class="card">
-      	<div class="card-header bg-success">
-        	<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseSeven">State</a>
-      	</div>
-      	<div id="collapseSeven" class="collapse" data-parent="#accordion">
-      		<div class="row bg-success text-white pl-4">
-        		<div class="col-lg-6 col-sm-6">
-    			    <label class="radio"><input type="radio" name="movie">  Andhra Pradesh </label><br>
-              <label class="radio"><input type="radio" name="movie"> Arunachal Pradesh</label>
-              <label class="radio"><input type="radio" name="movie"> Assam</label>
-              <label class="radio"><input type="radio" name="movie">  Bihar </label><br>
-              <label class="radio"><input type="radio" name="movie"> Chhattisgarh</label>
-              <label class="radio"><input type="radio" name="movie"> Goa</label>
-              <label class="radio"><input type="radio" name="movie">  Gujarat</label><br>
-              <label class="radio"><input type="radio" name="movie"> Haryana</label>
-              <label class="radio"><input type="radio" name="movie"> Himachal Pradesh</label>
-              <label class="radio"><input type="radio" name="movie">  Jharkhand</label><br>
-              <label class="radio"><input type="radio" name="movie"> Karnataka</label>
-              <label class="radio"><input type="radio" name="movie"> Kerala</label>
-    		  	</div>
-    				<div class="col-lg-6 col-sm-6">
-    			   	<label class="radio"><input type="radio" name="movie">  Madhya Pradesh</label><br>
-              <label class="radio"><input type="radio" name="movie"> Maharashtra</label><br>
-              <label class="radio"><input type="radio" name="movie"> Manipur</label>
-              <label class="radio"><input type="radio" name="movie">  Meghalaya</label><br>
-              <label class="radio"><input type="radio" name="movie"> Mizoram</label><br>
-              <label class="radio"><input type="radio" name="movie"> Nagaland</label>
-              <label class="radio"><input type="radio" name="movie">  Odisha</label><br>
-              <label class="radio"><input type="radio" name="movie"> Punjab</label><br>
-              <label class="radio"><input type="radio" name="movie"> Rajasthan</label>
-              <label class="radio"><input type="radio" name="movie">  Sikkim</label><br>
-              <label class="radio"><input type="radio" name="movie"> Tamil Nadu</label><br>
-              <label class="radio"><input type="radio" name="movie"> Uttar Pradesh</label>
-      			</div>
-    			</div>
-      	</div>
-    	</div>
-    	<div class="card">
-      	<div class="card-header bg-success">
-      		<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseEight">City</a>
-      	</div>
-        <div id="collapseEight" class="collapse" data-parent="#accordion">
-      		<div class="row bg-success text-white pl-4">
-        		<div class="col-lg-6 col-sm-6">
-    			    <label class="radio"><input type="radio" name="movie">  Hindi</label><br>
-              <label class="radio"><input type="radio" name="movie"> English</label>
-              <label class="radio"><input type="radio" name="movie"> Bangali</label>
-    		  	</div>
-    				<div class="col-lg-6 col-sm-6">
-    					<label class="radio"><input type="radio" name="movie">  Tamil</label><br>
-              <label class="radio"><input type="radio" name="movie"> Odia</label><br>
-              <label class="radio"><input type="radio" name="movie"> Telugu</label>
-    				</div>
-    			</div>
-      	</div>
-    	</div>
-    	<div class="card">
-      	<div class="card-header bg-success">
-        	<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseNine">Income (Inr)</a>
-      	</div>
-      	<div id="collapseNine" class="collapse" data-parent="#accordion">
-      		<div class="row bg-success text-white pl-4">
-        		<div class="col-lg-6 col-sm-6">
-    			    <label class="radio"><input type="radio" name="movie">  Hindi</label><br>
-              <label class="radio"><input type="radio" name="movie"> English</label>
-              <label class="radio"><input type="radio" name="movie"> Bangali</label>
-    				</div>
-    		  	<div class="col-lg-6 col-sm-6">
-    					<label class="radio"><input type="radio" name="movie">  Tamil</label><br>
-              <label class="radio"><input type="radio" name="movie"> Odia</label><br>
-              <label class="radio"><input type="radio" name="movie"> Telugu</label>
-    				</div>
-    			</div>
-      	</div>
-    	</div>
-      <div class="card">
-      	<div class="card-header bg-success">
-      		<a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseTen">Martial Status</a>
-      	</div>
-      	<div id="collapseTen" class="collapse" data-parent="#accordion">
-        	<div class="row bg-success text-white pl-4">
-        		<div class="col-lg-6 col-sm-6">
-    			    <label class="radio"><input type="radio" name="movie">  Hindi</label><br>
-              <label class="radio"><input type="radio" name="movie"> English</label>
-              <label class="radio"><input type="radio" name="movie"> Bangali</label>
-    		  	</div>
-    				<div class="col-lg-6 col-sm-6">
-    					<label class="radio"><input type="radio" name="movie">  Tamil</label><br>
-              <label class="radio"><input type="radio" name="movie"> Odia</label><br>
-              <label class="radio"><input type="radio" name="movie"> Telugu</label>
-    				</div>
-    			</div>
-      	</div>
-    	</div>
-	  </div>
-  </div>
+    <title>Matrimama | UserProfile</title>
+    <!--================= css ============================-->
+    <link rel="stylesheet" href="css/style.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    <!--=====================bootstrap====================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- =============== font-awesome ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
-  <!-- <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.mobile-1.4.2.min.js"></script> -->
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <style>
+        input[type='range'] {
+        width: 280px;
+        height: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        outline: none;
+        }
+        input[type='range'],
+        input[type='range']::-webkit-slider-runnable-track,
+        input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background: none;
+        }
+        input[type='range']::-webkit-slider-runnable-track {
+        width: 200px;
+        height: 4px;
+        background: white;
+        }
+        input[type='range']:nth-child(2)::-webkit-slider-runnable-track{
+        background: none;
+        }
+        input[type='range']::-webkit-slider-thumb {
+        position: relative;
+        height: 15px;
+        width: 15px;
+        margin-top: -7px;
+        background: #fff;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        z-index: 1;
+        }
+        input[type='range']:nth-child(1)::-webkit-slider-thumb{
+        z-index: 2;
+        }
+        .rangeslider{
+        position: relative;
+        height: 60px;
+        width: 210px;
+        display: inline-block;
+        margin-top: -5px;
+        margin-left: 20px;
+        }
+        .rangeslider input{
+        position: absolute;
+        }
+        .rangeslider{
+        position: absolute;
+        }
+        .rangeslider span{
+        position: absolute;
+        margin-top: 30px;
+        left: 0;
+        }
+        .rangeslider .right{
+        position: relative;
+        float: right;
+        margin-right: -75px;
+        }
+        .bg-succes{
+        background: #0c8260;
+        }
+        .modal-content.modal_box {
+          width: 550px;
+      }
+    </style>
+  </head>
+  <body>
+    <!----========================popup===========================-->
+  <div class="modal fade px-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog px-5 py-2">
+        <div class="modal-content modal_box">
+          <div class="top_model_box"></div>
+          <div class="modal-body p-4">
+            <div class="model_content_form text-center ">
+              <p>We are Very Sorry to see you Leaving Us!,<br> We Hope to see you back soon!</p>
+              <hr>
+              <h4 class="text-center">Delete/ Hide Your Current Profile</h4>
+              <p class="text-center text-success">Please Let us know the Reason for leaving!</p>
+              <input type="text" placeholder="Reason(Optional)" class="mb-3"><br>
+              <button class="col-lg-12 btn btn-warning btn-sm text-white font-weight-bold w-50">HIDE/DELETE PROFILE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <header>
+    <div class="container-fluid">
+      <!---================== Top_Bar================-->
+      <div class="row">
+        <div class="top_bar">
+          <img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
+          <i class="fa fa-bars float-right mt-3" style="font-size:26px" type="button" data-toggle="dropdown" id="faicon"></i>
+                      <ul class="col-lg-2 col-sm-2 dropdown-menu px-4 mt-3 " id="dropnav">
+                          <li><a class="text-white" href="index.html">Home</a></li>
+                          <li><a class="text-white" href="about_us.html">About</a></li>
+                          <li><a class="text-white" href="https://www.astromitra.com/online_horoscope/free-horoscope-compatibility.php" target="_blank">Free Horoscope</a></li>
+                          <li><a class="text-white" href="privacy_policy.html">Privacy Policy</a></li>
+                          <li><a class="text-white" href="contact_us.html">Contact Us</a></li>
+                          <p>Need any Help? Write to us at <span style="color: black;"><b>support@wedding.com</b></span> or Call us at +91-124-2659 OR ELSE Give us your mailid/ phone number we will get in touch with in 18 hrs</p>
+                          <input type="text" placeholder="Full Name" class="form-control mb-2">
+                          <input type="email" placeholder="Email" class="form-control mb-2">
+                          <input type="number" name="number" id="" placeholder="Contact No" class="form-control">
+                          <button class="bttn float-left">Submit</button>
+            </ul>
+          <button class="bttn help_btn">Help</button>
+          <a href="index.html"><button class="bttn logout">Logout</button></a>
+          <div class="dropdown langu">
+          <p class="dropdown-toggle lang" data-toggle="dropdown">English
+            <span class="caret"></span></p>
+            <ul class="dropdown-menu p-2 lang1">
+              <li><a href="#">Hindi</a></li>
+              <li><a href="#">Bangoli</a></li>
+            </ul>
+        </div>
+          <p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
+          <img src="./image/svg/user.svg" alt="user" class="user_icon_s">
+
+          </div>
+      </div>
+
+      <!----------------- End top bar ------------------->
+          
+      <div class="row login_menu_bar">
+        <div class="col-lg-4">
+          <div class="logo">
+            <img src="./image/logo.png" alt="logo" class="login_logo_bar">
+          </div>
+        </div>
+        <div class="col-lg-8 shortlisted_section">
+          <a href="#" class="shortlist_ancor">Your Shortlisted<span class="number">(0)</span></a>
+          <a href="#" class="shortlist_ancor">You Interested<span class="number">(0)</span></a>
+          <a href="#" class="shortlist_ancor">New Matches<span class="number">(0)</span></a>
+          <a href="#" class="shortlist_ancor">Recently Viewed<span class="number">(0)</span></a>
+          <i class="fa fa-envelope menu_icon"></i>
+          <i class="fa fa-bell menu_icon"></i>
+          <img src="./image/svg/user.svg" alt="user" class="user_icon_fullscreen" type="button" data-toggle="dropdown" id="faicon">
+            <ul class="col-lg-3 col-sm-2 dropdown-menu px-4 mt-3" id="dropnav" class="dropnav">
+                          <li><a class="text-white" href="myprofile.html">My Profile</a></li>
+                          <li><a class="text-white" href="register_page.html">Edit/Upload Photo</a></li>
+                          <li><a class="text-white" href="userProfile.html">Desired Partner Profile</a></li>
+                          <li><a class="text-white" href="" data-toggle="modal" data-target="#exampleModal">Hide/ Delete Profile</a></li>
+                          <li><a class="text-white" href="">Change Password</a></li>
+                          <a href="index.html"><button class="bttn float-left">Logout</button></a>
+                      </ul><br>
+                  <div class="third_row">
+                    <img src="./image/match.png" alt="match"class="match">
+                    <label for="search">Search for Profile</label>
+                    <input type="text">
+                    <button class="btn btn-sm" id="edit_bttton">Edit Profile</button>
+                </div>
+        </div>  
+      </div>
+    </div>
+  </header>
+  <!--=======================end header section ====================-->
+    <div class="container-fluid my-4">
+      <div class="col-lg-3 bg-succes py-4">
+        <!--=======FAQ======-->
+        <div id="accordion">
+          <h3 class="bg-white text-center">0 Matches</h3>
+          <div class="card-header bg-succes">
+            <a class="card-link text-white h5" data-toggle="collapse" href="#collapseOne">Age (Yrs)</a>
+          </div>
+          <div id="collapseOne" class="collapse show bg-succes" data-parent="#accordion">
+            <div class="row bg-succes">
+              <b><div class="rangeslider">
+                <input class="min" name="range_1" type="range" min="18" max="70" value="20" />
+                <input class="max" name="range_1" type="range" min="18" max="70" value="30" />
+                <span class="range_min light left" style="color: white;">20</span>
+                <span class="range_max light right" style="color: white;">30</span>
+              </div></b>
+            </div> <br><br>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseTwo">Height (inches)</a>
+          </div>
+          <div id="collapseTwo" class="collapse bg-succes" data-parent="#accordion">
+            <div class="card-body row bg-succes">
+              <b><div class="rangeslider">
+                <input class="min" name="range_1" type="range" min="48" max="75" value="55" />
+                <input class="max" name="range_1" type="range" min="48" max="75" value="65" />
+                <span class="range_min light left" style="color: white;">55</span>
+                <span class="range_max light right" style="color: white;">65</span>
+              </div></b>
+            </div><br><br>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseThree">Religion</a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Hindus</label>
+                <label class="radio"><input type="radio" name="movie"> Muslims</label><br>
+                <label class="radio"><input type="radio" name="movie"> Sikhs</label>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Christians</label>
+                <label class="radio"><input type="radio" name="movie"> Buddhists</label>
+                <label class="radio"><input type="radio" name="movie"> Jains</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseFour">Caste Group</a>
+          </div>
+          <div id="collapseFour" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Brahmins</label>
+                <label class="radio"><input type="radio" name="movie"> Kshatriyas</label>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Vaishyas</label>
+                <label class="radio"><input type="radio" name="movie"> Shudras</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseFive">Caste</a>
+          </div>
+          <div id="collapseFive" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Brahmins</label>
+                <label class="radio"><input type="radio" name="movie"> Kshatriyas</label>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Vaishyas</label>
+                <label class="radio"><input type="radio" name="movie"> Shudras</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseSix">Mother Tongue</a>
+          </div>
+          <div id="collapseSix" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Hindi</label><br>
+                <label class="radio"><input type="radio" name="movie"> English</label>
+                <label class="radio"><input type="radio" name="movie"> Bangali</label>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Tamil</label><br>
+                <label class="radio"><input type="radio" name="movie"> Odia</label><br>
+                <label class="radio"><input type="radio" name="movie"> Telugu</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseSeven">State</a>
+          </div>
+          <div id="collapseSeven" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Andhra Pradesh </label><br>
+                <label class="radio"><input type="radio" name="movie"> Arunachal Pradesh</label>
+                <label class="radio"><input type="radio" name="movie"> Assam</label><br>
+                <label class="radio"><input type="radio" name="movie">  Bihar </label><br>
+                <label class="radio"><input type="radio" name="movie"> Chhattisgarh</label>
+                <label class="radio"><input type="radio" name="movie"> Goa</label><br>
+                <label class="radio"><input type="radio" name="movie">  Gujarat</label><br>
+                <label class="radio"><input type="radio" name="movie"> Haryana</label>
+                <label class="radio"><input type="radio" name="movie"> Sikkim</label>
+                <label class="radio"><input type="radio" name="movie">  Jharkhand</label><br>
+                <label class="radio"><input type="radio" name="movie"> Karnataka</label>
+                <label class="radio"><input type="radio" name="movie"> Kerala</label>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Madhya Pradesh</label><br>
+                <label class="radio"><input type="radio" name="movie"> Maharashtra</label><br>
+                <label class="radio"><input type="radio" name="movie"> Manipur</label>
+                <label class="radio"><input type="radio" name="movie"> Meghalaya</label><br>
+                <label class="radio"><input type="radio" name="movie"> Mizoram</label><br>
+                <label class="radio"><input type="radio" name="movie"> Nagaland</label>
+                <label class="radio"><input type="radio" name="movie"> Odisha</label><br>
+                <label class="radio"><input type="radio" name="movie"> Punjab</label><br>
+                <label class="radio"><input type="radio" name="movie"> Rajasthan</label>
+                <label class="radio"><input type="radio" name="movie"> Himachal Pradesh</label><br>
+                <label class="radio"><input type="radio" name="movie"> Tamil Nadu</label><br>
+                <label class="radio"><input type="radio" name="movie"> Uttar Pradesh</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseEight">City</a>
+          </div>
+          <div id="collapseEight" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Hindi</label><br>
+                <label class="radio"><input type="radio" name="movie"> English</label>
+                <label class="radio"><input type="radio" name="movie"> Bangali</label>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Tamil</label><br>
+                <label class="radio"><input type="radio" name="movie"> Odia</label><br>
+                <label class="radio"><input type="radio" name="movie"> Telugu</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseNine">Income (Inr)</a>
+          </div>
+          <div id="collapseNine" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie"> 3 Lac</label><br>
+                <label class="radio"><input type="radio" name="movie"> 4 Lac</label><br>
+                <label class="radio"><input type="radio" name="movie"> 5 Lac</label>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie"> 6 Lac</label><br>
+                <label class="radio"><input type="radio" name="movie"> 7 Lac</label><br>
+                <label class="radio"><input type="radio" name="movie"> 8 Lac</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-header bg-succes">
+            <a class="collapsed card-link text-white h5" data-toggle="collapse" href="#collapseTen">Martial Status</a>
+          </div>
+          <div id="collapseTen" class="collapse" data-parent="#accordion">
+            <div class="row bg-succes text-white pl-4">
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  Yes</label><br>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label class="radio"><input type="radio" name="movie">  No</label><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--======================footer===========================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-12">
+          <h5>Need Help?</h5>
+          <ul>
+            <li><a href="#">Member Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-12 company">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <h5>Privacy & Legal</h5>
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-12">
+          <h5>Customer Service (Toll free)</h5>
+          <ul>
+            <li><a href="#">1-800-419-6299</a></li>
+            <li>Follow us on</li>
+            <div class="d-flex">
+              <li><a href="#"><img src="./image/facebook-logo.svg" alt="" class="footer_social_media"></a></li>
+              <li><a href="#"><img src="./image/twitter.svg" alt="" class="footer_social_media"></a></li>
+              <li><a href="#"><img src="./image/instagram.svg" alt="" class="footer_social_media"></a></li>
+              <li><a href="#"><img src="./image/google-plus.svg" alt="" class="footer_social_media"></a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="col-lg col-sm-12">
+          <p>This website is strictly for matrimonial purpose only and not a dating website<br>
+          Copyright &#169; 2020 matrimama.com, the most trusted matrimony brand</p>
+          <button class="footer_btn">Ask/Chat Now</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script type="text/javascript">(function() {
+    function addSeparator(nStr) {
+    nStr += '';
+    var x = nStr.split('.');
+    var x1 = x[0];
+    var x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+    x1 = x1.replace(rgx, '$1' + '.' + '$2');
+    }
+    return x1 + x2;
+    }
+    function rangeInputChangeEventHandler(e){
+    var rangeGroup = $(this).attr('name'),
+    minBtn = $(this).parent().children('.min'),
+    maxBtn = $(this).parent().children('.max'),
+    range_min = $(this).parent().children('.range_min'),
+    range_max = $(this).parent().children('.range_max'),
+    minVal = parseInt($(minBtn).val()),
+    maxVal = parseInt($(maxBtn).val()),
+    origin = $(this).context.className;
+    if(origin === 'min' && minVal > maxVal-1){
+    $(minBtn).val(maxVal-1);
+    }
+    var minVal = parseInt($(minBtn).val());
+    $(range_min).html(addSeparator(minVal*1));
+    if(origin === 'max' && maxVal-1 < minVal){
+    $(maxBtn).val(1+ minVal);
+    }
+    var maxVal = parseInt($(maxBtn).val());
+    $(range_max).html(addSeparator(maxVal*1));
+    }
+    $('input[type="range"]').on( 'input', rangeInputChangeEventHandler);
+    })();</script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <script src="js/script.js"></script>
+  </body>
 </html>

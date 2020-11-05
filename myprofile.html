@@ -60,8 +60,29 @@
 		font-weight: bolder;
 		font-size: 20px;
 	}
+	.modal-content.modal_box {
+		    width: 550px;
+		}
 </style>
 <body>
+	<!----========================popup===========================-->
+	<div class="modal fade px-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog px-5 py-2">
+				<div class="modal-content modal_box">
+					<div class="top_model_box"></div>
+					<div class="modal-body p-4">
+						<div class="model_content_form text-center ">
+							<p>We are Very Sorry to see you Leaving Us!,<br> We Hope to see you back soon!</p>
+							<hr>
+							<h4 class="text-center">Delete/ Hide Your Current Profile</h4>
+							<p class="text-center text-success">Please Let us know the Reason for leaving!</p>
+							<input type="text" placeholder="Reason(Optional)" class="mb-3"><br>
+							<button class="col-lg-12 btn btn-warning btn-sm text-white font-weight-bold w-50">HIDE/DELETE PROFILE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	<header>
 		<div class="container-fluid">
 			<!---================== Top_Bar================-->
@@ -82,7 +103,7 @@
 	                        <button class="bttn float-left">Submit</button>
 						</ul>
 					<button class="bttn help_btn">Help</button>
-					<button class="bttn logout">Logout</button>
+					<a href="index.html"><button class="bttn logout">Logout</button></a>
 					<div class="dropdown langu">
 					<p class="dropdown-toggle lang" data-toggle="dropdown">English
 						<span class="caret"></span></p>
@@ -115,11 +136,11 @@
 					<img src="./image/svg/user.svg" alt="user" class="user_icon_fullscreen" type="button" data-toggle="dropdown" id="faicon">
 						<ul class="col-lg-3 col-sm-2 dropdown-menu px-4 mt-3" id="dropnav" class="dropnav">
 	                        <li><a class="text-white" href="myprofile.html">My Profile</a></li>
-	                        <li><a class="text-white" href="">Edit/Upload Photo</a></li>
-	                        <li><a class="text-white" href="">Desired Partner Profile</a></li>
-	                        <li><a class="text-white" href="">Hide/ Delete Profile</a></li>
+	                        <li><a class="text-white" href="register_page.html">Edit/Upload Photo</a></li>
+	                        <li><a class="text-white" href="userProfile.html">Desired Partner Profile</a></li>
+	                        <li><a class="text-white" href="" data-toggle="modal" data-target="#exampleModal">Hide/ Delete Profile</a></li>
 	                        <li><a class="text-white" href="">Change Password</a></li>
-	                        <button class="bttn float-left">Logout</button>
+	                        <a href="index.html"><button class="bttn float-left">Logout</button></a>
 	                    </ul><br>
 	                <div class="third_row">
 	                	<img src="./image/match.png" alt="match"class="match">
