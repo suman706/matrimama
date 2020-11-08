@@ -245,3 +245,29 @@ function about_my(){
 	var about_form = document.getElementById("about_form");
 	about_form.style.display = "block";
 }
+function next8(){
+	var partner_menu = document.getElementById("partner_menu");
+	partner_menu.style.display = "block";
+
+	var partner_form = document.getElementById("partner_form");
+	partner_form.style.display = "block";
+
+	var lifestyle_menu = document.getElementById("lifestyle_menu");
+	lifestyle_menu.style.display = "none";
+
+	var lifestyle_form = document.getElementById("lifestyle_form");
+	lifestyle_form.style.display = "none";
+}
+function life_style(){
+	var partner_menu = document.getElementById("partner_menu");
+	partner_menu.style.display = "none";
+
+	var partner_form = document.getElementById("partner_form");
+	partner_form.style.display = "none";
+
+	var lifestyle_menu = document.getElementById("lifestyle_menu");
+	lifestyle_menu.style.display = "block";
+
+	var lifestyle_form = document.getElementById("lifestyle_form");
+	lifestyle_form.style.display = "block";
+}
