@@ -245,6 +245,7 @@ function about_my(){
 	var about_form = document.getElementById("about_form");
 	about_form.style.display = "block";
 }
+
 function next8(){
 	var partner_menu = document.getElementById("partner_menu");
 	partner_menu.style.display = "block";
