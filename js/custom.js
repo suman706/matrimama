@@ -60,7 +60,7 @@ function next(){
 	var photo_menu = document.getElementById("photo_menu");
 	photo_menu.style.display="block";
 
-	var x = document.getElementById("photo_upload")
+	var x = document.getElementById("photo_upload");
 	x.style.display="block";
 }
 
@@ -88,7 +88,7 @@ function next2(){
 	var photo_meu = document.getElementById("photo_menu");
 	photo_menu.style.display="none";
 
-	var x = document.getElementById("photo_upload")
+	var x = document.getElementById("photo_upload");
 	x.style.display="none";
 }
 
@@ -102,7 +102,7 @@ function photoupload(){
 	var photo_meu = document.getElementById("photo_menu");
 	photo_menu.style.display="block";
 
-	var x = document.getElementById("photo_upload")
+	var x = document.getElementById("photo_upload");
 	x.style.display="block";
 }
 
