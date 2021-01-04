@@ -23,6 +23,7 @@ mobile[0].style.display = "block";
 //next button function
 function next_form(counter,event){
 	event.preventDefault();
+	start_with_hide();
 	console.log(counter + "\n");
 	menu[counter].style.display = "none";
 	register[counter].style.display = "none";
