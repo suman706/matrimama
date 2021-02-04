@@ -837,14 +837,14 @@
 			<div class="col-lg-9 upload_details">
 				<div class="row">
 					<div class="col-lg-10">
-						<h2>State your career and educational information <br> to get the most appropriate match</h2>
+						<h3>State your career and educational information to get the most appropriate match</h3>
 						<form action="">
 							<!--=======Highest academic session=======-->
 							<div class="row">
-							    <div class="col-md-6"> 
+							    <div class="col-md-7"> 
 							      <h4 class="text-danger">Highest Academic Session</h4>
 							    </div>
-							    <div class="col-md-6 px-1 mt-3"> 
+							    <div class="col-md-5 px-1 mt-3"> 
 							       <div class="hr"></div>
 							    </div>
 						    </div>
@@ -859,7 +859,7 @@
                                   <option>MBA</option>
                                </select>
 							</div>
-							<p class="pt-5">in</p>
+							<p class="pt-5 d-none d-lg-block">in</p>
 								<div class="form-group col-md-6">
                                <label for="Specialization">Specialization<span class="star">*</span></label>
                                <select class="form-control text-danger"  id="Specialization">
@@ -894,7 +894,7 @@
                                   <option>MBA</option>
                                </select>
 							</div>
-							<p class="pt-5">in</p>
+							<p class="pt-5 d-none d-lg-block">in</p>
 								<div class="form-group col-md-6">
                                <label for="Specialization">Specialization</label>
                                <select class="form-control text-danger"  id="Specialization">
@@ -912,10 +912,10 @@
 
 							<!--=======Career Development=======-->
 							<div class="row">
-							    <div class="col-md-5"> 
+							    <div class="col-md-7"> 
 							      <h4 class="text-danger">Career Development</h4>
 							    </div>
-							    <div class="col-md-7 px-1 mt-3"> 
+							    <div class="col-md-5 px-1 mt-3"> 
 							       <div class="hr"></div>
 							    </div>
 						    </div>
@@ -1059,10 +1059,10 @@
 						<form action="">
 							<!--=======Parent Details=======-->
 							<div class="row">
-							    <div class="col-md-4"> 
+							    <div class="col-md-5"> 
 							      <h4 class="text-danger">Parent Details</h4>
 							    </div>
-							    <div class="col-md-8 px-1 mt-3"> 
+							    <div class="col-md-7 px-1 mt-3"> 
 							       <div class="hr"></div>
 							    </div>
 						    </div>
@@ -1089,10 +1089,10 @@
 						    </div>
                             <!--=======Siblings=======-->
 							<div class="row">
-							    <div class="col-md-3"> 
+							    <div class="col-md-5"> 
 							      <h4 class="text-danger">Siblings</h4>
 							    </div>
-							    <div class="col-md-9 px-1 mt-3"> 
+							    <div class="col-md-7 px-1 mt-3"> 
 							       <div class="hr"></div>
 							    </div>
 						    </div>
@@ -1118,50 +1118,50 @@
 
 						    <!--=======Pedigree Afflunce=======-->
 							<div class="row">
-							    <div class="col-md-4"> 
+							    <div class="col-md-5"> 
 							      <h4 class="text-danger">Pedigree Afflunce</h4>
 							    </div>
-							    <div class="col-md-8 px-1 mt-3"> 
+							    <div class="col-md-7 px-1 mt-3"> 
 							       <div class="hr"></div>
 							    </div>
 						    </div>
 
                             <!---====family Type===--->
-                            <div class="main py-2">
-                            	<div class="form-check form-check-inline">
-									<label for="self" class="form-check-label font-weight-bold">Family Type</label>
+							<form class="py-1">
+								<div class="form-check form-check-inline col-lg-3 col-sm-12">
+									<label for="self" class="form-check-label font-weight-bold">Family Type<span class="star">*</span></label>
 								</div>
-							   <div class="form-check form-check-inline">
-								   <input type="radio" id="Joint" class="form-check-input" name="familyType" value="male">
-								   <label for="Joint" class="form-check-label">Joint</label>
-							    </div>
-							    <div class="form-check form-check-inline">
-								   <input type="radio" id="Nuclear" class="form-check-input" name="familyType" value="male">
-								   <label for="Nuclear" class="form-check-label">Nuclear</label>
-							    </div>
-							    <div class="form-check form-check-inline">
-								   <input type="radio" id="Extended" class="form-check-input" name="familyType" value="male">
-								   <label for="Extended" class="form-check-label">Extended Nuclear</label>
-							    </div>
-							</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" id="slim" class="form-check-input" name="category" value="self">
+									<label for="slim" class="form-check-label">Joint</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" id="athletic" class="form-check-input" name="category" value="self">
+									<label for="Athletic" class="form-check-label">Nuclear</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" id="average" class="form-check-input" name="category" value="self">
+									<label for="Average" class="form-check-label">Extended Nuclear</label>
+								</div>
+							</form>
 							<!---======family Values=======-->
-							<div class="main py-1">
-								<div class="form-check form-check-inline">
-									<label for="self" class="form-check-label font-weight-bold">Family Values</label>
-								</div>
-							    <div class="form-check form-check-inline">
-									<input type="radio" id="Traditional" class="form-check-input" name="familyValues " value="male">
-									<label for="Traditional" class="form-check-label">Traditional</label>
+							<form class="py-1">
+								<div class="form-check form-check-inline col-lg-3 col-sm-12">
+									<label for="self" class="form-check-label font-weight-bold">Family Values<span class="star">*</span></label>
 								</div>
 								<div class="form-check form-check-inline">
-									<input type="radio" id="Modrate" class="form-check-input" name="familyValues " value="male">
-									<label for="Modrate" class="form-check-label">Modrate</label>
+									<input type="radio" id="slim" class="form-check-input" name="category" value="self">
+									<label for="slim" class="form-check-label">Traditional</label>
 								</div>
 								<div class="form-check form-check-inline">
-									<input type="radio" id="Libral" class="form-check-input" name="familyValues " value="male">
-									<label for="Libral" class="form-check-label">Libral</label>
+									<input type="radio" id="athletic" class="form-check-input" name="category" value="self">
+									<label for="Athletic" class="form-check-label">Modrate</label>
 								</div>
-							</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" id="average" class="form-check-input" name="category" value="self">
+									<label for="Average" class="form-check-label">Libral</label>
+								</div>
+							</form>
 							
 							<div class="main">
 								<div class="form-group col-md-6">
@@ -1173,7 +1173,7 @@
                                     <input type="text" placeholder="Your Native Place" id="NativePlace" name="NativePlace"  class="form-control">
 							    </div>
 						    </div>
-						    <div class="form-group col-md-6">
+						    <div class="form-group col-md-6 col-sm-12">
                                 <label for="annual"><b>Family Annual Income</b></label>
                                 <select class="form-control text-danger"  id="annual">
                                     <option></option>
