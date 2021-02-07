@@ -997,3 +997,9 @@ font-weight: 600;
 	.location{
 		font-weight: bold;
 	}
+
+/*=============search_page_popup==========================*/
+	.search_form1{
+		background-color: #85FFBD;
+ 		background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+	}
