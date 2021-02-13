@@ -884,6 +884,7 @@ margin-top: 10px;
 margin-left: 50px;
 color: #40968B;
 padding:10px;
+float: right;
 }
 .match{
 width:auto;
@@ -891,7 +892,6 @@ height: auto;
 background-color:#40968B;
 align-items: center;
 margin-left: 140px;
-margin-right: 30px;
 cursor: pointer;
 }
 .match img{
@@ -904,6 +904,7 @@ background-color: #F1794D;
 color: white;
 margin-left: 30px;
 font-weight: 600;
+margin-right: 50px;
 }
 
 /*======================style of steps form ==============================*/

@@ -83,74 +83,6 @@
 			</div>
 		</div>
 	</div>
-<!-- search popup -->
-  <div class="modal fade" id="searchPopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-info text-white">
-          <img src="./image/logo.png" class="modal-title text-center" id="exampleModalLabel">
-        </div>
-        <div class="modal-body search_form1">
-          <form>
-            <div class="form-row">
-              <div class="col-md-9 mb-3">
-                <label for="validationDefault01">Name</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Name" required>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationDefault02">Age</label>
-                <select class="custom-select" id="validationDefault04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>18</option>
-                  <option>20</option>
-                  <option>22</option>
-                  <option>24</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col-md-5 mb-3">
-                <label for="validationDefault03">City</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="validationDefault04">State</label>
-                <select class="custom-select" id="validationDefault04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>Bihar</option>
-                  <option>Uttar Pradesh</option>
-                  <option>Jharkhand</option>
-                </select>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationDefault05">Pin Code</label>
-                <input type="text" class="form-control" id="validationDefault05" placeholder="PinCode" required>
-              </div>
-              <div class="col-md-8 mb-3">
-                <label for="validationDefault06">Qualification</label>
-                <input type="text" class="form-control" id="validationDefault06" placeholder="Higher Qualification" required>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="validationDefault07">Cast/Religion</label>
-                <input type="text" class="form-control" id="validationDefault07" placeholder="Cast/Religion" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Agree to terms and conditions
-                </label>
-              </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Submit</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- end search popup box -->
 	<header>
 		<div class="container-fluid">
 			<!---================== Top_Bar================-->
@@ -193,15 +125,15 @@
 					</div>
 				</div>
 				<div class="col-lg-8 shortlisted_section">
-					<a href="#" class="shortlist_ancor" data-target="#searchPopup" data-toggle="modal">Your Shortlisted<span class="number">(0)</span></a>
-					<a href="#" class="shortlist_ancor" data-target="#searchPopup" data-toggle="modal">You Interested<span class="number">(0)</span></a>
-					<a href="#" class="shortlist_ancor">New Matches<span class="number">(0)</span></a>
-					<a href="#" class="shortlist_ancor">Recently Viewed<span class="number">(0)</span></a>
+					<a href="searchpage.html" class="shortlist_ancor">Your Shortlisted<span class="number">(0)</span></a>
+					<a href="searchpage.html" class="shortlist_ancor">You Interested<span class="number">(0)</span></a>
+					<a href="searchpage.html" class="shortlist_ancor">New Matches<span class="number">(0)</span></a>
+					<a href="searchpage.html" class="shortlist_ancor">Recently Viewed<span class="number">(0)</span></a>
 					<a href="#"><i class="fa fa-envelope menu_icon"></i></a>
 					<a href="#"><i class="fa fa-bell menu_icon"></i></a>
 					<img src="./image/svg/user.svg" alt="user" class="user_icon_fullscreen" type="button" data-toggle="dropdown" id="faicon">
 						<ul class="col-lg-3 col-sm-2 dropdown-menu px-4 mt-3" id="dropnav" class="dropnav">
-	                        <li><a class="text-white" href="myprofile.html">My Profile</a></li>
+	                        <li><a class="text-white active" href="myprofile.html">My Profile</a></li>
 	                        <li><a class="text-white" href="register_page.html">Edit/Upload Photo</a></li>
 	                        <li><a class="text-white" href="userProfile.html">Desired Partner Profile</a></li>
 	                        <li><a class="text-white" href="" data-toggle="modal" data-target="#exampleModal">Hide/ Delete Profile</a></li>
@@ -209,9 +141,7 @@
 	                        <a href="index.html"><button class="bttn float-left">Logout</button></a>
 	                    </ul><br>
 	                <div class="third_row">
-	                	<img src="./image/match.png" alt="match"class="match">
-		                <label for="search">Search for Profile</label>
-		                <input type="text" data-target="#searchPopup" data-toggle="modal" placeholder="search">
+	                	<a href="searchpage.html"><img src="./image/match.png" alt="match"class="match"></a>
 		                <button class="btn btn-sm" id="edit_bttton"><a class="text-white" href="register_page.html">Edit Profile</a></button>
 		            </div>
 				</div>	
