@@ -30,206 +30,89 @@
 	</style>
 </head>
 <body>
-<!--===================popup form ==================================-->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog px-5 py-2">
-			<div class="modal-content">
-				<div class="top_model_box"></div>
-				<div class="modal-body p-4">
-					<div class="model_content_form">
-						<h4 class="text-center">Welcome Back!</h4>
-						<p class="text-center">You Have Already Registered! Please try to Login.</p>
-						<div>
-							<label for="email">Email id</label><br>
-							<input type="email" id="email" class="col-lg-12 form-control" name="email" required placeholder="xyz@gmail.com">
-						</div>
-						<div>
-							<label for="password">Password</label><br>
-							<input type="password" class="col-lg-12 form-control" id="password" name="password" required>
-						</div><br>
-						<div class="form-group form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Login With Mobile</label>
-							<a href="#" class="float-right">Forgot Password?</a>
-						</div>
-						<button class="col-lg-12 btn btn-warning text-white font-weight-bold">Login With Email</button>
-						<div class="or-seperator"><i>or</i></div>
-						<p class="text-center">Login with your social media account</p>
-						<div class="text-center social-btn">
-							<a href="#" class="btn btn-info"><i class="fa fa-facebook"></i>&nbsp; Facebook</a>
-							<a href="#" class="btn btn-danger"><i class="fa fa-google"></i>&nbsp; Google</a>
-						</div>
-						<p class="text-center pt-3"><a href="register_page.html">New to Matrimama? Register</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog p-5">
-			<div class="modal-content">
-				<div class="top_model_box"></div>
-				<div class="modal-body p-4">
-					<div class="model_content_form">
-						<div class="form-group">
-							<label for="gender">I am looking for a</label><br>
-							<select class="px-3 py-1 form-control">
-								<option>Male</option>
-								<option>Female</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="age">aged from</label><br>
-							<select class="px-3 py-1 form-control">
-								<option>20</option>
-								<option>18</option>
-								<option>23</option>
-								<option>22</option>
-								<option>24</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="age">aged to</label><br>
-							<select class="px-3 py-1 form-control">
-								<option>25</option>
-								<option>18</option>
-								<option>20</option>
-								<option>22</option>
-								<option>24</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="religion">of Religion</label><br>
-							<select class="px-3 py-1 form-control">
-								<option>Select</option>
-								<option>Hindu</option>
-								<option>Muslim</option>
-								<option>Christian</option>
-								<option>Sikh</option>
-								<option>Parsi</option>
-								<option>Jain</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="lang">of Mother Tongue</label><br>
-							<select class="px-3 py-1 form-control">
-								<option>Select</option>
-								<option>Bengali</option>
-								<option>English</option>
-								<option>Gujarati</option>
-								<option>Hindi</option>
-								<option>Kannada</option>
-								<option>Konkani</option>
-							</select>
-						</div>
-						<div>
-							<button class="bttn search"><a href="searchpage.html" class="text-white">Let's Begin</a></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-<!--==========================end popup form========================-->
-	<header>
-		<div class="container-fluid">
-			<!---================== Top_Bar================-->
-			<div class="row">
-				<div class="top_bar">
-					<img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
-					<i class="fa fa-bars float-right mt-3" style="font-size:26px" type="button" data-toggle="dropdown" id="faicon"></i>
-                        <ul class="col-lg-2 col-sm-2 col-md-3 dropdown-menu px-4 mt-3 " id="dropnav">
-                            <li><a class="text-white" href="index.html">Home</a></li>
-                            <li><a class="text-white" href="about_us.html">About</a></li>
-                            <li><a class="text-white" href="https://www.astromitra.com/online_horoscope/free-horoscope-compatibility.php" target="_blank">Free Horoscope</a></li>
-                            <li><a class="text-white" href="privacy_policy.html">Privacy Policy</a></li>
-                            <li><a class="text-white" href="contact_us.html">Contact Us</a></li>
-                            <p>Need any Help? Write to us at <span style="color: black;"><b>support@wedding.com</b></span> or Call us at +91-124-2659 OR ELSE Give us your mailid/ phone number we will get in touch with in 18 hrs</p>
-                            <input type="text" placeholder="Full Name" class="form-control mb-2">
-                            <input type="email" placeholder="Email" class="form-control mb-2">
-                            <input type="number" name="number" id="" placeholder="Contact No" class="form-control">
-                            <button class="bttn float-left">Submit</button>
-						</ul>
-					<button class="bttn help_btn">Help</button>
-					<button class="bttn login_btn" data-toggle="modal" data-target="#exampleModal">Login</button>
-					
-					<div class="dropdown langu">
-						<p class="dropdown-toggle lang" data-toggle="dropdown">English
-							<span class="caret"></span></p>
-							<ul class="dropdown-menu p-2 lang1">
-								<li><a href="#">Hindi</a></li>
-								<li><a href="#">Bengali</a></li>
-							</ul>
-					</div>
-					<p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>	
-				</div>
-			</div>
-			<!----------------- End top bar ------------------->					
-			<div class="row">
-				<div class="menu_bar">
-					<div class="col-lg-3">
-						<div class="logo">
-							<img src="./image/logo.png" alt="logo">
-						</div>
-					</div>
-					<div class="icon col-lg-7">
-						<form>
-							<div class="form-check form-check-inline">
-								<label for="self" class="form-check-label font-weight-bold">Create profile for :</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="self" class="form-check-input" name="category" value="self">
-								<label for="self" class="form-check-label">Self</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="son" class="form-check-input" name="category" value="son">
-								<label for="son" class="form-check-label">Son</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="Daughter" class="form-check-input" name="category" value="daughter">
-								<label for="daughter" class="form-check-label">Daughter</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="Brother" class="form-check-input" name="category" value="brother">
-								<label for="brother" class="form-check-label">Brother</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="sister" class="form-check-input" name="category" value="sister">
-								<label for="sister" class="form-check-label">Sister</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input type="radio" id="Friend" class="form-check-input" name="category" value="friend">
-								<label for="friend" class="form-check-label">Relative/Friend</label>
-							</div>
-							<br>
-							<div class="main">
-								<div>
-									<label for="email"><strong>Email Address</strong></label><br>
-									<input type="email" id="email" name="email" required>
-								</div>
-								<div>
-									<label for="phone"><strong>Mobile No.</strong></label><br>
-									<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-								</div>
-								<div>
-									<label for="password"><strong>Password</strong></label><br>
-									<input type="password" id="password" name="password" required>
-								</div>
-								<div>
-									<a href="register_page.html" class="btn btn-info btn-sm mt-3" type="button"><strong>REGISTER FREE</strong></a>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="col-lg-2">
-						<p class="register_with">Register with<br>
-						<a href="#"><img src="./image/svg/facebook.svg" alt="facebook" class="face_book"></a>
-						<a href="#"><img src="./image/svg/google-plus.svg" alt="instagram" class="face_book"></a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+ <!----======================== popup =====================-->
+  <div class="modal fade px-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog px-5 py-2">
+      <div class="modal-content modal_box">
+        <div class="top_model_box"></div>
+        <div class="modal-body p-4">
+          <div class="model_content_form text-center ">
+            <p>We are Very Sorry to see you Leaving Us!,<br> We Hope to see you back soon!</p>
+            <hr>
+            <h4 class="text-center">Delete/ Hide Your Current Profile</h4>
+            <p class="text-center text-success">Please Let us know the Reason for leaving!</p>
+            <input type="text" placeholder="Reason(Optional)" class="mb-3"><br>
+            <button class="col-lg-12 btn btn-warning btn-sm text-white font-weight-bold w-50">HIDE/DELETE PROFILE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container-fluid">
+      <!---================== Top_Bar================-->
+      <div class="row">
+        <div class="top_bar">
+          <img src="./image/logo.png" alt="top_bar_logo" class="top_bar_logo">
+          <i class="fa fa-bars float-right mt-3" style="font-size:26px" type="button" data-toggle="dropdown" id="faicon"></i>
+                      <ul class="col-lg-2 col-md-3 col-sm-2 dropdown-menu px-4 mt-3 " id="dropnav">
+                          <li><a class="text-white" href="index.html">Home</a></li>
+                          <li><a class="text-white" href="about_us.html">About</a></li>
+                          <li><a class="text-white" href="https://www.astromitra.com/online_horoscope/free-horoscope-compatibility.php" target="_blank">Free Horoscope</a></li>
+                          <li><a class="text-white" href="privacy_policy.html">Privacy Policy</a></li>
+                          <li><a class="text-white" href="contact_us.html">Contact Us</a></li>
+                          <p>Need any Help? Write to us at <span style="color: black;"><b>support@wedding.com</b></span> or Call us at +91-124-2659 OR ELSE Give us your mailid/ phone number we will get in touch with in 18 hrs</p>
+                          <input type="text" placeholder="Full Name" class="form-control mb-2">
+                          <input type="email" placeholder="Email" class="form-control mb-2">
+                          <input type="number" name="number" id="" placeholder="Contact No" class="form-control">
+                          <button class="bttn float-left">Submit</button>
+            </ul>
+          <button class="bttn help_btn">Help</button>
+          <a href="index.html"><button class="bttn logout">Logout</button></a>
+          <div class="dropdown langu">
+          <p class="dropdown-toggle lang" data-toggle="dropdown">English
+            <span class="caret"></span></p>
+            <ul class="dropdown-menu p-2 lang1">
+              <li><a href="#">Hindi</a></li>
+              <li><a href="#">Bengali</a></li>
+            </ul>
+        </div>
+          <p class="help">Need any help? Write to us at support@wedding.com | Call: +91-124-265 8600 (India)</p>
+          </div>
+      </div>
+
+      <!----------------- End top bar ------------------->
+          
+      <div class="row login_menu_bar">
+        <div class="col-lg-4">
+          <div class="logo">
+            <img src="./image/logo.png" alt="logo" class="login_logo_bar">
+          </div>
+        </div>
+        <div class="col-lg-8 shortlisted_section">
+          <a href="searchpage.html" class="shortlist_ancor">Your Shortlisted<span class="number">(0)</span></a>
+          <a href="searchpage.html" class="shortlist_ancor">You Interested<span class="number">(0)</span></a>
+          <a href="searchpage.html" class="shortlist_ancor">New Matches<span class="number">(0)</span></a>
+          <a href="searchpage.html" class="shortlist_ancor">Recently Viewed<span class="number">(0)</span></a>
+          <a href="#"><i class="fa fa-envelope menu_icon"></i></a>
+          <a href="#"><i class="fa fa-bell menu_icon"></i></a>
+          <img src="./image/svg/user.svg" alt="user" class="user_icon_fullscreen" type="button" data-toggle="dropdown" id="faicon">
+            <ul class="col-lg-3 col-sm-2 dropdown-menu px-4 mt-3" id="dropnav" class="dropnav">
+                          <li><a class="text-white" href="myprofile.html">My Profile</a></li>
+                          <li><a class="text-white" href="register_page.html">Edit/Upload Photo</a></li>
+                          <li><a class="text-white" href="userProfile.html">Desired Partner Profile</a></li>
+                          <li><a class="text-white" href="" data-toggle="modal" data-target="#exampleModal">Hide/ Delete Profile</a></li>
+                          <li><a class="text-white" href="">Change Password</a></li>
+                          <a href="index.html"><button class="bttn float-left">Logout</button></a>
+                      </ul><br>
+                  <div class="third_row">
+                    <a href="searchpage.html"><img src="./image/match.png" alt="match"class="match"></a>
+                    <button class="btn btn-sm" id="edit_bttton"><a class="text-white" href="register_page.html">Edit Profile</a></button>
+                </div>
+        </div>  
+      </div>
+    </div>
+  </header>
 	<!-- search result section -->
 	<div class="container-fluid">
 		<div class="row">
